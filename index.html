@@ -3,19 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CSI</title>
-	<!-- <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
 	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
-	-->
-	<link rel="stylesheet" href="main.css"
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 </head>
 <body>
 	<!-- Nav bar here -->
 	<div class="nav">
 		<div class="container">
-			<ul class="nav">
+			<ul class="nav nav-pills nav-justified">
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Members</a></li>
-				<li><a href="#">Missions</a>
+				<li role="presentation" class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						Missions <span class="caret"></span>
+					</a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Weather Balloons</a></li>
 						<li><a href="#">Micro-G</a></li>
@@ -25,9 +29,10 @@
 						<li><a href="#">Rockets</a></li>
 					</ul>
 				</li>
-				<li><a href="#">News</a>
+				<li id="nav-logo"><a href="#"><img src="images/logo1.png" width="50%" height="50%"></a></li>
+				<li><a href="#">News</a></li>
 				<li><a href="#">Calendar</a></li>
-				<li><a href="#">Outreach</a></li>
+				<!-- <li><a href="#">Outreach</a></li> -->
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
@@ -35,41 +40,89 @@
 	
 	<div class="jumbotron">
 		<div class="container">
+			<img src="images/logo1.png">
 			<h1>Columbia Space Initiative</h1>
+
 		</div>
 	</div>
 
 	<div class="group-abstract">
 		<div class="container">
 			<h2>
-				A group of students and professors dedicated to the pursuit of knowledge beyond Earth.
+				Beyond Earth.
 			</h2>
+			<h3>
+				The Columbia Space Initiative is a group of students and professors dedicated to the pursuit of knowledge in near-space, space, and beyond.
+			</h3>
 		</div>
 	</div>
+
+	<hr>
 
 	<div class="learn-more">
 		<div class="container">
 			<div class="row">
-				<div>
-					<h3>Missions</h3>
-					<p>The Columbia Space Initiative brings together a variety of different missions that all serve to further our knowledge of space-related topics. From weather balloons to NASA competitions, CSI supports missions that appeal to everyone.</p>
-					<a href="#"><button>Learn more</button></a>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="images/mission3.jpg">
+						<div class="caption">
+							<h3>Missions</h3>
+							<p>The Columbia Space Initiative brings together a variety of different missions that all serve to further our knowledge of space-related topics. From weather balloons to NASA competitions, CSI supports missions that appeal to everyone.</p>
+							<br>
+							<a href="#"><button type="button" class="btn btn-primary" data-toggle="button">
+								Learn more
+							</button></a>
+						</div>
+					</div>
+					
 				</div>
 				<!--This should be outreach, but since we don't have enough content...-->
-				<div>
-					<h3>Members</h3>
-					<p>We are proud to have dedicated members with diverse backgrounds and experiences that contribute to the CSI community. Missions are lead by experienced, dedicated leaders, and members are free to contribute to any mission that appeals to their interests.</p>
-					<a href="#"><button>Learn more</button></a>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="images/members1.jpg">
+						<div class="caption">
+							<h3>Members</h3>
+							<p>We are proud to have dedicated members with diverse backgrounds and experiences that contribute to the CSI community. Missions are lead by experienced, dedicated leaders, and members are free to contribute to any mission that appeals to their interests.</p>
+							<a href="#"><button type="button" class="btn btn-primary" data-toggle="button">
+								Learn more
+							</button></a>
+						</div>
+					</div>
+					
 				</div>
 
-				<div>
-					<h3>Contact</h3>
-					<p>Have ideas, suggestions, or opportunities? Our ears are open.</p>
-					<a href="#"><button>Learn more</button></a>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="images/mission4.jpg">
+						<div class="caption">
+							<h3>Contact</h3>
+							<p>Have ideas, suggestions, or opportunities? Our ears are open.</p>
+							<br>
+							<br>
+							<br>
+							<br>
+							<a href="#"><button type="button" class="btn btn-primary" data-toggle="button">
+								Learn more
+							</button></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="sign-up">
+		<div class="container">
+			
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			
+		</div>
+	</div>
+
 
 </body>
 </html>

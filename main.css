@@ -1,1 +1,53 @@
 /* CSS goes here */
+
+html,body {
+	height: 100%;
+	width: 100%;
+}
+
+.nav {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.jumbotron {
+	background-image: url("images/img1-cut.png");
+	height: 100%;
+	background-size: cover;
+	padding-top: 60px;
+}
+
+.jumbotron img{
+	 width: 15%;
+	 min-width: 100px;
+}
+
+.jumbotron .container {
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.group-abstract .container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.group-abstract h2 {
+	font-size: 48px;
+}
+
+.group-abstract h3{
+	color: #808080;
+}
+
+.learn-more .container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+@media screen and (max-width: 800px){
+	#nav-logo {
+		display: none;
+	}
+}
