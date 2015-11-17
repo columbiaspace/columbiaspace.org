@@ -5,21 +5,43 @@ html,body {
 	width: 100%;
 }
 
-.nav {
-	padding-top: 2px;
-	padding-bottom: 2px;
+.navbar {
+	background-color: rgba(255,255,255,1);
 }
 
+.nav {
+	font-size: 18px;
+}
+
+.nav-color {
+	color: #337ab7;
+}
+
+#nav-logo img{
+	width: 50%;
+	height: 50%;
+}
+
+/*
+#nav-logo a{
+	padding: 0;
+}
+*/
+
 .jumbotron {
-	background-image: url("images/img1-cut.png");
+	background-image: url("images/img1-long.png");
 	height: 100%;
 	background-size: cover;
-	padding-top: 60px;
+	background-position: center;
 }
 
 .jumbotron img{
 	 width: 15%;
 	 min-width: 100px;
+}
+
+.jumbotron .hack-padding{
+	height: 20%;
 }
 
 .jumbotron .container {
@@ -39,29 +61,44 @@ html,body {
 }
 
 .row-color {
-	background-color: rgba(96,96,96,0.7);
-}
-
-.row-shadow {
-	box-shadow: 2px 2px 5px black;
-	transition: box-shadow 2s ease;
+	/*background-color: rgba(96,96,96,0.7);*/
+	background-color: rgba(255,255,255,0.8);
 }
 
 .group-highlight {
 	height: 100%;
 }
 
+.group-highlight .container {
+	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.group-highlight .row {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.group-highlight h2{
+	padding-top: 10px;
+}
 
 .group-highlight p {
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
 	font-size: 18px;
 }
 
 .group-highlight h2,
 .group-highlight p {
-	color: #fff;
+	color: #000;
 	text-align: left;
+}
+
+.social .container {
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 #highlight1 {
@@ -82,7 +119,7 @@ html,body {
 	background-position: center;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 767px){
 	#nav-logo {
 		display: none;
 	}
