@@ -31,19 +31,55 @@ html,body {
 .group-abstract .container{
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-bottom: 40px;
 }
 
 .group-abstract h2 {
 	font-size: 48px;
 }
 
-.group-abstract h3{
-	color: #808080;
+.row-color {
+	background-color: rgba(96,96,96,0.7);
 }
 
-.learn-more .container{
-	padding-left: 20px;
-	padding-right: 20px;
+.row-shadow {
+	box-shadow: 2px 2px 5px black;
+	transition: box-shadow 2s ease;
+}
+
+.group-highlight {
+	height: 100%;
+}
+
+
+.group-highlight p {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+.group-highlight h2,
+.group-highlight p {
+	color: #fff;
+	text-align: left;
+}
+
+#highlight1 {
+	background-image: url("images/mission3-long.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#highlight2 {
+	background-image: url("images/mission4-long.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#highlight3 {
+	background-image: url("images/members1-long.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 @media screen and (max-width: 800px){
