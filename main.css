@@ -22,14 +22,11 @@ html,body {
 	height: 50%;
 }
 
-/*
-#nav-logo a{
-	padding: 0;
-}
-*/
-
 .jumbotron {
+	-webkit-animation: jumbotron-fade 3s ease-in 0s 1;
+	animation: jumbotron-fade 3s ease-in 0s 1;
 	background-image: url("images/img1-long.png");
+	background-color: #000;
 	height: 100%;
 	background-size: cover;
 	background-position: center;
@@ -137,4 +134,17 @@ html,body {
 	#nav-logo {
 		display: none;
 	}
+}
+
+@-webkit-keyframes jumbotron-fade {
+    0% {background-image: url("images/img1-long-dark.png")};
+    50% {background-image: url("images/img1-long-dark.png")};
+    100% {background-image: url("images/img1-long.png")};
+} 
+
+/* Standard syntax */ 
+@keyframes jumbotron-fade {
+    0% {background-image: url("images/img1-long-dark.png")};
+    50% {background-image: url("images/img1-long-dark.png")};
+    100% {background-image: url("images/img1-long.png")};
 }
