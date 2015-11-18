@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CSI</title>
+	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css">
+	<link rel="stylesheet" href="bootstrap-social.css">
 	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
 	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
 	<link rel="stylesheet" href="main.css">
@@ -11,10 +13,16 @@
 </head>
 <body>
 	<!-- Nav bar here -->
-	<div class="nav">
-		<div class="container">
-			<ul class="nav nav-pills nav-justified">
-				<li class="active"><a href="#">Home</a></li>
+	<div class="navbar navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="btn btn-default navbar-toggle nav-color" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="glyphicon glyphicon-menu-hamburger"></span>
+      			</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav nav-pills nav-justified">
+				<li><a href="#">Home</a></li>
 				<li><a href="#">Members</a></li>
 				<li role="presentation" class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -29,20 +37,23 @@
 						<li><a href="#">Rockets</a></li>
 					</ul>
 				</li>
-				<li id="nav-logo"><a href="#"><img src="images/logo1.png" width="50%" height="50%"></a></li>
+				<li id="nav-logo"><a href="#"><img src="images/logo1.png"></a></li>
+
 				<li><a href="#">News</a></li>
 				<li><a href="#">Calendar</a></li>
 				<!-- <li><a href="#">Outreach</a></li> -->
 				<li><a href="#">Contact</a></li>
 			</ul>
+			</div>
 		</div>
 	</div>
 	
 	<div class="jumbotron">
+		<div class="hack-padding">
+		</div>
 		<div class="container">
 			<img src="images/logo1.png">
 			<h1>Columbia Space Initiative</h1>
-
 		</div>
 	</div>
 
@@ -51,78 +62,100 @@
 			<h2>
 				Beyond Earth.
 			</h2>
-			<h3>
+			<h2><small>
 				The Columbia Space Initiative is a group of students and professors dedicated to the pursuit of knowledge in near-space, space, and beyond.
-			</h3>
+			</small></h2>
+		</div>
+	</div>
+	
+	<div class="group-highlight" id="highlight1">
+		<div class="container">
+			<div class="row row-color row-shadow">
+				<div class="col-md-4">
+					<h2>Challenging Missions</h2>
+				</div>
+				<div class="col-md-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis explicabo ut eligendi voluptatum, a iste quidem maiores ipsam consequuntur deleniti totam, laboriosam! Quam quasi voluptatem expedita quod est maxime voluptate?</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<hr>
-
-	<div class="learn-more">
+	<div class="group-highlight" id="highlight2">
 		<div class="container">
-			<div class="row">
+			<div class="row row-color row-shadow">
 				<div class="col-md-4">
-					<div class="thumbnail">
-						<img src="images/mission3.jpg">
-						<div class="caption">
-							<h3>Missions</h3>
-							<p>The Columbia Space Initiative brings together a variety of different missions that all serve to further our knowledge of space-related topics. From weather balloons to NASA competitions, CSI supports missions that appeal to everyone.</p>
-							<br>
-							<a href="#"><button type="button" class="btn btn-primary" data-toggle="button">
-								Learn more
-							</button></a>
-						</div>
-					</div>
-					
+					<h2>Dedicated Leaders</h2>
 				</div>
-				<!--This should be outreach, but since we don't have enough content...-->
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img src="images/members1.jpg">
-						<div class="caption">
-							<h3>Members</h3>
-							<p>We are proud to have dedicated members with diverse backgrounds and experiences that contribute to the CSI community. Missions are lead by experienced, dedicated leaders, and members are free to contribute to any mission that appeals to their interests.</p>
-							<a href="#"><button type="button" class="btn btn-primary" data-toggle="button">
-								Learn more
-							</button></a>
-						</div>
-					</div>
-					
+				<div class="col-md-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis minus libero aspernatur dolore consequuntur numquam consectetur, quibusdam. Accusantium explicabo animi libero ipsa maxime, quibusdam doloribus sed quod sapiente accusamus facere!</p>
 				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="group-highlight" id="highlight3">
+		<div class="container">
+			<div class="row row-color row-shadow">
 				<div class="col-md-4">
-					<div class="thumbnail">
-						<img src="images/mission4.jpg">
-						<div class="caption">
-							<h3>Contact</h3>
-							<p>Have ideas, suggestions, or opportunities? Our ears are open.</p>
-							<br>
-							<br>
-							<br>
-							<br>
-							<a href="#"><button type="button" class="btn btn-primary" data-toggle="button">
-								Learn more
-							</button></a>
-						</div>
-					</div>
+					<h2>Vibrant Community</h2>
+				</div>
+				<div class="col-md-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est aspernatur, tenetur enim quam sit obcaecati velit animi accusantium sed sunt ipsa non, repellat quia harum vel aliquam impedit, sapiente.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="sign-up">
-		<div class="container">
-			
+		<div class="container text-center">
+			<h2>Stay Updated. <small>Sign up for our newsletter.</small></h2>
+			<!-- Mail chimp code here -->
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="//columbiaspace.us11.list-manage.com/subscribe/post?u=d0675a81c1dd47233ed8d1e5b&amp;id=37c4c0d943" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+						<div class="form-group">
+							<input type="email" value="" name="EMAIL" class="required email form-control input-lg" id="mce-EMAIL" placeholder="majortom@columbia.edu">
+						</div>
+						<div id="mce-responses" class="clear form-group">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;">
+							<input type="text" name="b_d0675a81c1dd47233ed8d1e5b_37c4c0d943" tabindex="-1" value="">
+						</div>
+						<div class="clear form-group">
+							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg">
+						</div>
+						<!-- end bot control -->
+				</form>
+			</div>
+			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+			<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
 		</div>
 	</div>
 
-	<div class="footer">
-		<div class="container">
-			
+	<hr>
+
+	<div class="social">
+		<div class="container text-center">
+			<a class="btn btn-social-icon btn-lg btn-twitter">
+    			<span class="fa fa-twitter"></span>
+  			</a>
+  			<a class="btn btn-social-icon btn-lg btn-facebook">
+    			<span class="fa fa-facebook"></span>
+  			</a>
+  			<a class="btn btn-social-icon btn-lg btn-github">
+    			<span class="fa fa-github"></span>
+  			</a>
 		</div>
 	</div>
-
 
 </body>
+
+<footer class="text-center">
+	<p>Copyright 2015 Columbia Space Initiative</p>
+</footer>
 </html>
