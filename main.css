@@ -3,6 +3,7 @@
 html,body {
 	height: 100%;
 	width: 100%;
+	position: relative;
 }
 
 .navbar {
@@ -23,16 +24,19 @@ html,body {
 }
 
 .jumbotron {
-	-webkit-animation: jumbotron-fade 3s ease-in 0s 1;
-	animation: jumbotron-fade 3s ease-in 0s 1;
-	background-image: url("images/img1-long.png");
-	background-color: #000;
 	height: 100%;
 	background-size: cover;
 	background-position: center;
 }
 
-.jumbotron img{
+.indexjumbo {
+	-webkit-animation: jumbotron-fade 2s ease-in 0s 1;
+	animation: jumbotron-fade 2s ease-in 0s 1;
+	background-image: url("images/img1-long.png");
+	background-color: #000;
+}
+
+.jumbotron #jumbologo{
 	 width: 15%;
 	 min-width: 100px;
 }
@@ -126,6 +130,10 @@ html,body {
 	display: inline;
 }
 
+.members h1 {
+	margin-top: 10px;
+}
+
 .footer{
 	padding-bottom: 5px;
 }
@@ -137,14 +145,13 @@ html,body {
 }
 
 @-webkit-keyframes jumbotron-fade {
-    0% {background-image: url("images/img1-long-dark.png")};
-    50% {background-image: url("images/img1-long-dark.png")};
-    100% {background-image: url("images/img1-long.png")};
+    from {background-image: url("images/img1-long-dark.png")};
+    to {background-image: url("images/img1-long-dark.png")};
 } 
 
-/* Standard syntax */ 
+/* Standard syntax*/
 @keyframes jumbotron-fade {
-    0% {background-image: url("images/img1-long-dark.png")};
-    50% {background-image: url("images/img1-long-dark.png")};
-    100% {background-image: url("images/img1-long.png")};
+    from {background-image: url("images/img1-long-dark.png")};
+    to {background-image: url("images/img1-long-dark.png")};
+    /*100% {background-image: url("images/img1-long.png")};*/
 }

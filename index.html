@@ -10,8 +10,11 @@
 	<link rel="stylesheet" href="main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	<script type='text/javascript' src='/mailchimp.js'></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
+
 	<!-- Nav bar here -->
 	<div class="navbar navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -22,7 +25,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav nav-pills nav-justified">
-				<li><a href="#">Home</a></li>
+				<li><a href="#aboutsection">About Us</a></li>
 				<li><a href="#">Members</a></li>
 				<li role="presentation" class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -47,17 +50,19 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="jumbotron">
+
+	<!-- Jumbotron here -->
+	<div class="jumbotron indexjumbo">
 		<div class="hack-padding">
 		</div>
 		<div class="container">
-			<img src="images/logo1.png">
+			<img src="images/logo1.png" id="jumbologo">
 			<h1>Columbia Space Initiative</h1>
 		</div>
 	</div>
 
-	<div class="group-abstract">
+	<!-- Group abstract here -->
+	<div class="group-abstract" id="aboutsection">
 		<div class="container">
 			<h2>
 				Beyond Earth.
@@ -68,6 +73,7 @@
 		</div>
 	</div>
 	
+	<!-- Content here -->
 	<div class="group-highlight" id="highlight1">
 		<div class="container">
 			<div class="row row-color row-shadow">
@@ -75,7 +81,7 @@
 					<h2>Challenging Missions</h2>
 				</div>
 				<div class="col-md-8">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis explicabo ut eligendi voluptatum, a iste quidem maiores ipsam consequuntur deleniti totam, laboriosam! Quam quasi voluptatem expedita quod est maxime voluptate?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas facilis ab eligendi asperiores, animi pariatur cumque quaerat, illo at dolorum aspernatur. Expedita praesentium mollitia voluptas eveniet eum quod, blanditiis beatae iure porro sunt, voluptate perspiciatis voluptatem tempore quo obcaecati omnis molestiae corporis sapiente dolores odit! Repudiandae iste perspiciatis veritatis rem!</p>
 				</div>
 			</div>
 		</div>
@@ -88,7 +94,7 @@
 					<h2>Dedicated Leaders</h2>
 				</div>
 				<div class="col-md-8">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis minus libero aspernatur dolore consequuntur numquam consectetur, quibusdam. Accusantium explicabo animi libero ipsa maxime, quibusdam doloribus sed quod sapiente accusamus facere!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime quisquam doloribus, obcaecati tempore cum, molestiae in illum sunt quam quo quod possimus mollitia voluptatibus odit dolore placeat accusamus. Facilis doloribus, explicabo minima eligendi animi qui cum sapiente ratione deserunt in corporis, dolorum asperiores expedita quos quisquam, consequatur iusto corrupti.</p>
 				</div>
 			</div>
 		</div>
@@ -101,12 +107,13 @@
 					<h2>Vibrant Community</h2>
 				</div>
 				<div class="col-md-8">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est aspernatur, tenetur enim quam sit obcaecati velit animi accusantium sed sunt ipsa non, repellat quia harum vel aliquam impedit, sapiente.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolorum perferendis vitae enim deserunt minus nemo quaerat vero culpa at sequi, dolores qui exercitationem natus deleniti ab nisi quae voluptate commodi cupiditate. Natus quae porro sapiente obcaecati laboriosam nulla velit tempore voluptas odio, autem quod. Sit ea illo alias quisquam.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- Mailchimp plugin here -->
 	<div class="sign-up">
 		<div class="container text-center">
 			<h2>Stay Updated. <small>Sign up for our newsletter.</small></h2>
@@ -131,14 +138,13 @@
 						<!-- end bot control -->
 				</form>
 			</div>
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-			<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 			<!--End mc_embed_signup-->
 		</div>
 	</div>
 
 	<hr>
-
+	
+	<!-- Social links here -->
 	<div class="social">
 		<div class="container text-center">
   			<a class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com/ColumbiaSpaceInitiative/">
