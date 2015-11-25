@@ -30,8 +30,8 @@ html,body {
 }
 
 .indexjumbo {
-	-webkit-animation: jumbotron-fade 2s ease-in 0s 1;
-	animation: jumbotron-fade 2s ease-in 0s 1;
+	-webkit-animation: jumbotron-fade 2s ease-in-out 0s 1;
+	animation: jumbotron-fade 2s ease-in-out 0s 1;
 	background-image: url("images/img1-long.png");
 	background-color: #000;
 }
@@ -68,6 +68,7 @@ html,body {
 
 .group-highlight {
 	height: 100%;
+	/* account for navbar height */
 }
 
 .group-highlight .container {
@@ -83,6 +84,7 @@ html,body {
 
 .group-highlight h2{
 	padding-top: 10px;
+	font-size: 48px;
 }
 
 .group-highlight p {
@@ -134,6 +136,12 @@ html,body {
 	margin-top: 10px;
 }
 
+
+.img-thumbnail {
+	padding:10px;
+}
+
+
 .footer{
 	padding-bottom: 5px;
 }
@@ -144,14 +152,30 @@ html,body {
 	}
 }
 
+/* Slide in */
 @-webkit-keyframes jumbotron-fade {
-    from {background-image: url("images/img1-long-dark.png")};
-    to {background-image: url("images/img1-long-dark.png")};
-} 
-
-/* Standard syntax*/
-@keyframes jumbotron-fade {
-    from {background-image: url("images/img1-long-dark.png")};
-    to {background-image: url("images/img1-long-dark.png")};
-    /*100% {background-image: url("images/img1-long.png")};*/
+	from {background: #000};
+	to {background: url("images/img1-long.png")}
 }
+
+@keyframes jumbotron-fade {
+	from {background: #000};
+	to {background: url("images/img1-long.png")}
+}
+
+
+/*Fade in */
+/*
+@-webkit-keyframes jumbotron-fade {
+    from {background-image: url("images/img1-long-dark.png")}
+    to {background-image: url("images/img1-long.png")};
+}
+
+
+@keyframes jumbotron-fade {
+    from {background-image: url("images/img1-long-dark.png")}
+    to {background-image: url("images/img1-long.png")};
+}
+*/
+
+

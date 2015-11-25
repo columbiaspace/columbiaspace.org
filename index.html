@@ -8,10 +8,12 @@
 	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
 	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
 	<link rel="stylesheet" href="main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-	<script type='text/javascript' src='/mailchimp.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+	<script type='text/javascript' src='main.js'></script>
+	
 </head>
 <body data-spy="scroll" data-target=".navbar">
 
@@ -25,8 +27,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav nav-pills nav-justified">
-				<li><a href="#aboutsection">About Us</a></li>
-				<li><a href="#">Members</a></li>
+				<li id="aboutNav"><a href="#aboutsection" data-scroll="#aboutsection">About Us</a></li>
+				<li><a href="members.html">Members</a></li>
 				<li role="presentation" class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 						Missions <span class="caret"></span>
@@ -40,7 +42,7 @@
 						<li><a href="#">Rockets</a></li>
 					</ul>
 				</li>
-				<li id="nav-logo"><a href="#"><img src="images/logo1.png"></a></li>
+				<li id="nav-logo"><a href="#" data-scroll="#"><img src="images/logo1.png"></a></li>
 
 				<li><a href="#">News</a></li>
 				<li><a href="#">Calendar</a></li>
@@ -116,7 +118,7 @@
 	<!-- Mailchimp plugin here -->
 	<div class="sign-up">
 		<div class="container text-center">
-			<h2>Stay Updated. <small>Sign up for our newsletter.</small></h2>
+			<h1>Stay Updated. <small>Sign up for our newsletter.</small></h1>
 			<!-- Mail chimp code here -->
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
@@ -138,6 +140,8 @@
 						<!-- end bot control -->
 				</form>
 			</div>
+			
+			<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery)); //var $mcj = jQuery.noConflict(true);</script>
 			<!--End mc_embed_signup-->
 		</div>
 	</div>
