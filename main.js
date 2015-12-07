@@ -8,7 +8,6 @@ $(document).ready(function() {
 	});
 
 	$('#aboutNav a').click(function(event) {
-		console.log("hello");
 	    event.preventDefault();
 	    $('html, body').animate({
             scrollTop: $(this.hash).offset().top - navOffset
@@ -17,7 +16,6 @@ $(document).ready(function() {
 	});
 
 	$('#nav-logo a').click(function(event) {
-		console.log("hello2");
 	    event.preventDefault();
 	    $('html, body').animate({
             scrollTop: "0px"

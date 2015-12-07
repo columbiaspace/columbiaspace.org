@@ -5,50 +5,55 @@
 	<title>CSI</title>
 	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css">
 	<link rel="stylesheet" href="bootstrap-social.css">
-	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+	<!--<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">-->
 	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
 	<link rel="stylesheet" href="main.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
 	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 	<script type='text/javascript' src='main.js'></script>
+
 	
 </head>
 <body data-spy="scroll" data-target=".navbar">
 
 	<!-- Nav bar here -->
 	<div class="navbar navbar-fixed-top" role="navigation">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="btn btn-default navbar-toggle nav-color" data-toggle="collapse" data-target="#myNavbar">
+				<button type="button" class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
         			<span class="glyphicon glyphicon-menu-hamburger"></span>
       			</button>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav nav-pills nav-justified">
-				<li id="aboutNav"><a href="#aboutsection" data-scroll="#aboutsection">About Us</a></li>
-				<li><a href="members.html">Members</a></li>
-				<li role="presentation" class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-						Missions <span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Weather Balloons</a></li>
-						<li><a href="#">Micro-G</a></li>
-						<li><a href="#">Cubesat</a></li>
-						<li><a href="#">NASA BIG</a></li>
-						<li><a href="#">RASC-AL</a></li>
-						<li><a href="#">Rockets</a></li>
-					</ul>
-				</li>
-				<li id="nav-logo"><a href="#" data-scroll="#"><img src="images/logo1.png"></a></li>
+				<ul class="nav nav-justified nav-pills">
+					<li id="aboutNav"><a href="#aboutsection" data-scroll="#aboutsection">About Us</a></li>
+					<li><a href="members.html">Members</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							Missions <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Weather Balloons</a></li>
+							<li><a href="#">Micro-G</a></li>
+							<li><a href="#">Cubesat</a></li>
+							<li><a href="#">NASA BIG</a></li>
+							<li><a href="#">RASC-AL</a></li>
+							<li><a href="#">Rockets</a></li>
+						</ul>
+					</li>
+					<li id="nav-logo"><a href="#" data-scroll="#"><img src="images/logo1.png"></a></li>
 
-				<li><a href="#">News</a></li>
-				<li><a href="#">Calendar</a></li>
-				<!-- <li><a href="#">Outreach</a></li> -->
-				<li><a href="#">Contact</a></li>
-			</ul>
+					<li><a href="news.html">News</a></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<!-- <li><a href="#">Outreach</a></li> -->
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -77,8 +82,8 @@
 	
 	<!-- Content here -->
 	<div class="group-highlight" id="highlight1">
-		<div class="container">
-			<div class="row row-color row-shadow">
+		<div class="container row-color">
+			<div class="row">
 				<div class="col-md-4">
 					<h2>Challenging Missions</h2>
 				</div>
@@ -90,8 +95,8 @@
 	</div>
 
 	<div class="group-highlight" id="highlight2">
-		<div class="container">
-			<div class="row row-color row-shadow">
+		<div class="container row-color">
+			<div class="row">
 				<div class="col-md-4">
 					<h2>Dedicated Leaders</h2>
 				</div>
@@ -103,8 +108,8 @@
 	</div>
 
 	<div class="group-highlight" id="highlight3">
-		<div class="container">
-			<div class="row row-color row-shadow">
+		<div class="container row-color">
+			<div class="row">
 				<div class="col-md-4">
 					<h2>Vibrant Community</h2>
 				</div>
@@ -151,12 +156,15 @@
 	<!-- Social links here -->
 	<div class="social">
 		<div class="container text-center">
+			<a class="btn btn-social-icon btn-lg btn-github" href="https://github.com/prichardsf/ColumbiaSpace">
+    			<span class="fa fa-github"></span>
+  			</a>
   			<a class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com/ColumbiaSpaceInitiative/">
     			<span class="fa fa-facebook"></span>
   			</a>
-  			<a class="btn btn-social-icon btn-lg btn-github" href="https://github.com/prichardsf/ColumbiaSpace">
-    			<span class="fa fa-github"></span>
-  			</a>
+  			<class class="btn btn-social-icon btn-lg btn-twitter" href="https://twitter.com/columbiasi">
+  				<span class="fa fa-twitter"></span>
+  			</class>
 		</div>
 	</div>
 
@@ -165,4 +173,5 @@
 <footer class="text-center footer">
 	<p>Copyright © 2015 Columbia Space Initiative</p>
 </footer>
+
 </html>
