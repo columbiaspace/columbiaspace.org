@@ -55,6 +55,7 @@ body a{
 	animation: jumbotron-fade 2s ease-in-out 0s 1;
 	background-image: url("images/index/img1-long.png");
 	background-color: #000;
+	height: 100% !important;
 }
 
 .jumbotron #jumbologo{
@@ -93,7 +94,7 @@ body a{
 .group-abstract .container{
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 
 .group-abstract h2 {
