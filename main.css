@@ -38,7 +38,8 @@ body a{
 }
 
 #nav-logo img{
-	max-height: 1%;
+	max-width: 30px;
+	max-height: 30px;
 }
 
 /*Jumbotron*/
