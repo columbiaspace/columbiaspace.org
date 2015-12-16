@@ -54,8 +54,8 @@ body a{
 .indexjumbo {
 	-webkit-animation: jumbotron-fade 2s ease-in-out 0s 1;
 	animation: jumbotron-fade 2s ease-in-out 0s 1;
-	background-image: url("images/index/img1-long.png");
-	background-color: #000;
+	background-image: url("images/index/img1-small.png");
+	background-color: #000000;
 	height: 100% !important;
 }
 
@@ -258,12 +258,12 @@ body a{
 /*
 @-webkit-keyframes jumbotron-fade {
 	from {background: #000};
-	to {background: url("images/img1-long.png")}
+	to {background-image: url("images/index/img1-long.jpg")}
 }
 
 @keyframes jumbotron-fade {
 	from {background: #000};
-	to {background: url("images/img1-long.png")}
+	to {background-image: url("images/index/img1-long.jpg")}
 }
 */
 
@@ -271,14 +271,12 @@ body a{
 /*Fade in */
 
 @-webkit-keyframes jumbotron-fade {
-    from {background-image: url("images/index/img1-long-dark.png")}
-    to {background-image: url("images/index/img1-long.png")};
+    from {background-image: url("images/index/img1-long-dark-small.png");}
+    to {background-image: url("images/index/img1-long-small.png");}
 }
 
 
 @keyframes jumbotron-fade {
-    from {background-image: url("images/index/img1-long-dark.png")}
-    to {background-image: url("images/index/img1-long.png")};
+    from {background-image: url("images/index/img1-long-dark-small.png");}
+    to {background-image: url("images/index/img1-long-small.png");}
 }
-
-
