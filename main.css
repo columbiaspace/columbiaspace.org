@@ -59,6 +59,14 @@ body a{
 	height: 100% !important;
 }
 
+.cubesatjumbo {
+	background-image: url("images/cubesat/cover.jpg");
+}
+
+.microjumbo {
+	background-image: url("images/microg/cover.jpg");
+}
+
 .jumbotron #jumbologo{
 	 width: 15%;
 	 min-width: 100px;
