@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<!-- Jumbotron here -->
+<div class="jumbotron news-jumbo">
+  <div class="hack-padding">
+  </div>
+  <div class="container">
+    <img src="images/logo1_500.png" id="jumbologo">
+    <h1>News</h1>
+  </div>
+</div>
+
+<!-- Group abstract here -->
+<div class="group-abstract">
+  <div class="container">
+    <h2>
+      Extra, Extra!
+    </h2>
+    <h2><small>
+	Read what our club has been up to.
+    </small></h2>
+  </div>
+</div>
+
+
+<!-- News for now -->
+<div class="mission-news">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+	<h2>All Recent News</h2>
+	<h2><small>Mission-specific news reports are on the mission pages</small></h2>
+	{% for post in site.posts %}
+	<!-- Begin news block -->
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3>{{ post.title }}</h3>
+	    <h4>{{ post.date }}</h4>
+	  </div>
+	  <div class="panel-body">
+	    {{ post.content }}
+	  </div>
+	</div>
+	<!-- End news block -->
+	{% endfor %}
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>
