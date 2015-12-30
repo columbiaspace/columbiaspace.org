@@ -42,6 +42,11 @@ body a{
 	max-height: 30px;
 }
 
+#nav-index-logo img{
+	max-width: 30px;
+	max-height: 30px;
+}
+
 .navbar .navbar-nav {
 	float: none;
 	text-align: center;

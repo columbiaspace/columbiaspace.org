@@ -15,7 +15,7 @@ $(document).ready(function() {
 	    window.location.hash = $(this).attr('href');
 	});
 
-	$('#nav-logo a').click(function(event) {
+	$('#nav-index-logo a').click(function(event) {
 	    event.preventDefault();
 	    $('html, body').animate({
             scrollTop: "0px"
