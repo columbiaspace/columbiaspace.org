@@ -13,4 +13,4 @@ m_barnes. Our design underwent many changes during the brainstorming procedure.
 Our inspirations were river anchors, screwpile drills, and the fractal design
 used on the Rosetta comet.
 
-- Katrina, Co-Head of Micro-G Team
+Katrina, Co-Head of Micro-G Team
