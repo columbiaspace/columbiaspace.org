@@ -2,22 +2,95 @@
 layout: default
 ---
 
-<div class="home">
+<!-- Jumbotron here -->
+<div class="jumbotron indexjumbo">
+  <div class="hack-padding">
+  </div>
+  <div class="container">
+    <img src="/assets/media/img/csi-logo.png" id="jumbologo">
+    <h1>Columbia Space Initiative</h1>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<!-- Group abstract here -->
+<div class="group-abstract" id="aboutsection">
+  <div class="container">
+    <h2>
+      Beyond Earth.
+    </h2>
+    <h2><small>
+	The Columbia Space Initiative is a group of students and professors dedicated to the pursuit of knowledge in near-space, space, and beyond.
+    </small></h2>
+  </div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!-- Content here -->
+<div class="group-highlight" id="highlight1">
+  <div class="container row-color">
+    <div class="row">
+      <div class="col-md-4">
+	<h2>Challenging Missions</h2>
+      </div>
+      <div class="col-md-8">
+	<p>The Columbia Space Initiative is committed to starting and completing various challenging missions. From local projects that can be finished in a week to international competitions that take up the whole year, the possibilities are endless.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="group-highlight" id="highlight2">
+  <div class="container row-color">
+    <div class="row">
+      <div class="col-md-4">
+	<h2>Dedicated Leaders</h2>
+      </div>
+      <div class="col-md-8">
+	<p>The leaders of the Columbia Space Initiative are committed to helping all members of the club further their knowledge of the cosmos. Leadership positions are transparent and easy to access, and any member can become a mission director by proposing a new mission to pursue.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="group-highlight" id="highlight3">
+  <div class="container row-color">
+    <div class="row">
+      <div class="col-md-4">
+	<h2>Vibrant Community</h2>
+      </div>
+      <div class="col-md-8">
+	<p>Our members come from various different backgrounds and experiences, but we have one thing in common: we love space! Join our pusuit for all things space and beyond.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Mailchimp plugin here -->
+<div class="sign-up">
+  <div class="container text-center">
+    <h1>Stay Updated. <small>Sign up for our newsletter.</small></h1>
+    <!-- Mail chimp code here -->
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="//columbiaspace.us11.list-manage.com/subscribe/post?u=d0675a81c1dd47233ed8d1e5b&amp;id=37c4c0d943" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+	<div class="form-group">
+	  <input type="email" value="" name="EMAIL" class="required email form-control input-lg" id="mce-EMAIL" placeholder="majortom@columbia.edu">
+	</div>
+	<div id="mce-responses" class="clear form-group">
+	  <div class="alert alert-danger" id="mce-error-response" style="display:none"></div>
+	  <div class="alert alert-success" id="mce-success-response" style="display:none"></div>
+	</div>
+	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div style="position: absolute; left: -5000px;">
+	  <input type="text" name="b_d0675a81c1dd47233ed8d1e5b_37c4c0d943" tabindex="-1" value="">
+	</div>
+	<div class="clear form-group">
+	  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg">
+	</div>
+	<!-- end bot control -->
+      </form>
+    </div>
+
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery)); //var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
+  </div>
 </div>
