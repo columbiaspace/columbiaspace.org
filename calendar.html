@@ -2,22 +2,38 @@
 layout: default
 ---
 
-<div class="home">
+<!-- Jumbotron here -->
+<div class="jumbotron cal-jumbo">
+  <div class="hack-padding">
+  </div>
+  <div class="container">
+    <img src="/assets/media/img/csi-logo.png" id="jumbologo">
+    <h1>Calendar</h1>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<!-- Group abstract here -->
+<div class="group-abstract">
+  <div class="container">
+    <h2>
+      Up to date.
+    </h2>
+    <h2><small>
+	Keep track of events and deadlines.
+    </small></h2>
+  </div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!-- Content here -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<hr>
+<div class="calendar">
+  <div class="container">
+    <div class="row">
+      <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=k1esjof3tmmr84i5um3812ni4s%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" id="desktop-cal"></iframe>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=k1esjof3tmmr84i5um3812ni4s%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" id="mobile-cal"></iframe>
+    </div>
 
+  </div>
 </div>
