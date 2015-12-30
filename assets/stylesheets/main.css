@@ -70,17 +70,17 @@ body a{
 .indexjumbo {
 	-webkit-animation: jumbotron-fade 2s ease-in-out 0s 1;
 	animation: jumbotron-fade 2s ease-in-out 0s 1;
-	background-image: url("/images/index/img1-long-small.png");
+	background-image: url("/assets/media/img/index/img1-long-small.png");
 	background-color: #000000;
 	height: 100% !important;
 }
 
 .cubesatjumbo {
-	background-image: url("/images/cubesat/cover.jpg");
+	background-image: url("/assets/media/img/cubesat/cover.jpg");
 }
 
 .microjumbo {
-	background-image: url("/images/microG/cover.jpg");
+	background-image: url("/assets/media/img/microG/cover.jpg");
 }
 
 .jumbotron #jumbologo{
@@ -99,19 +99,19 @@ body a{
 }
 
 .contact-jumbo{
-	background-image: url("/images/jumbotron/radio.jpg");
+	background-image: url("/assets/media/img/jumbotron/radio.jpg");
 }
 
 .cal-jumbo{
-	background-image: url("/images/jumbotron/earthrise.jpg");
+	background-image: url("/assets/media/img/jumbotron/earthrise.jpg");
 }
 
 .news-jumbo{
-	background-image: url("/images/jumbotron/falcon9.jpg");
+	background-image: url("/assets/media/img/jumbotron/falcon9.jpg");
 }
 
 .members-jumbo{
-	background-image: url("/images/index/members1-long.jpg");
+	background-image: url("/assets/media/img/index/members1-long.jpg");
 }
 
 /*abstract*/
@@ -164,19 +164,19 @@ body a{
 }
 
 #highlight1 {
-	background-image: url("/images/index/mission3-long.jpg");
+	background-image: url("/assets/media/img/index/mission3-long.jpg");
 	background-size: cover;
 	background-position: center;
 }
 
 #highlight2 {
-	background-image: url("/images/index/mission4-long.jpg");
+	background-image: url("/assets/media/img/index/mission4-long.jpg");
 	background-size: cover;
 	background-position: center;
 }
 
 #highlight3 {
-	background-image: url("/images/index/members1-long.jpg");
+	background-image: url("/assets/media/img/index/members1-long.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -313,12 +313,12 @@ body a{
 /*Fade in */
 
 @-webkit-keyframes jumbotron-fade {
-    from {background-image: url("/images/index/img1-long-dark-small.png");}
-    to {background-image: url("/images/index/img1-long-small.png");}
+    from {background-image: url("/assets/media/img/index/img1-long-dark-small.png");}
+    to {background-image: url("/assets/media/img/index/img1-long-small.png");}
 }
 
 
 @keyframes jumbotron-fade {
-    from {background-image: url("/images/index/img1-long-dark-small.png");}
-    to {background-image: url("/images/index/img1-long-small.png");}
+    from {background-image: url("/assets/media/img/index/img1-long-dark-small.png");}
+    to {background-image: url("/assets/media/img/index/img1-long-small.png");}
 }

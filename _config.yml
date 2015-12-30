@@ -11,4 +11,7 @@ github_username: columbiaspace
 facebook_username: ColumbiaSpaceInitiative
 
 # Build settings
-markdown: kramdown
+port: 5000
+highlighter: pygments
+markdown: redcarpet
+permalink: pretty
