@@ -278,22 +278,22 @@ body a{
 /*font */
 @font-face {
     font-family: futura;
-    src: url(fonts/Futura.otf);
+    src: url(/assets/fonts/Futura.otf);
 }
 
 @font-face {
     font-family: futura-light;
-    src: url(fonts/Futura-Light.otf);
+    src: url(/assets/fonts/Futura-Light.otf);
 }
 
 @font-face{
 	font-family: ProximaNova-sb;
-	src: url(fonts/ProximaNova-Sbold.otf);
+	src: url(/assets/fonts/ProximaNova-Sbold.otf);
 }
 
 @font-face{
 	font-family: ProximaNova-Reg;
-	src: url(fonts/ProximaNova-Reg.otf);
+	src: url(/assets/fonts/ProximaNova-Reg.otf);
 }
 
 /* Slide in */
