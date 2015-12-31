@@ -1,3 +1,5 @@
+{% assign current = page.url | downcase | split: '/' %}
+
 <header class="site-header">
 	<!-- Separate navbars for mobile and desktop, because I like bootstrap nav for desktop
 	and navbar for mobile collapsed. CSS controls which one. -->
@@ -7,25 +9,30 @@
 		<div class="container-fluid">
 				<ul class="nav nav-justified nav-pills">
 					<li><a href="/">About Us</a></li>
-					<li><a href="/members">Members</a></li>
+					<li {% if current[1] == 'members' %} class='active' {% endif %} >
+						<a href="/members">Members</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 							Missions <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="/mission-balloons">Weather Balloons</a></li>
-							<li><a href="/mission-microg">Micro-G</a></li>
-							<li><a href="/mission-cubesat">Cubesat</a></li>
-							<li><a href="/mission-rascal">RASC-AL</a></li>
-							<li><a href="/mission-rockets">Rockets</a></li>
+							{% for node in site.pages %}
+								{% if page.url == node.url and node.group == "mission" %}
+									<li class="active"><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+								{% elsif node.group == "mission" %}
+									<li><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+								{% endif %}
+							{% endfor %}
 						</ul>
 					</li>
 					<li id="nav-logo"><a href="/" ><img src="/assets/media/img/csi-logo-small.png"></a></li>
 
-					<li><a href="/news">News</a></li>
-					<li><a href="/calendar">Calendar</a></li>
-					<!-- <li><a href="#">Outreach</a></li> -->
-					<li><a href="/contact">Contact</a></li>
+					<li {% if current[1] == 'news' %} class='active' {% endif %} >
+						<a href="/news">News</a></li>
+					<li {% if current[1] == 'calendar' %} class='active' {% endif %} >
+						<a href="/calendar">Calendar</a></li>
+					<li {% if current[1] == 'contact' %} class='active' {% endif %} >
+						<a href="/contact">Contact</a></li>
 				</ul>
 		</div>
 	</div>
@@ -40,27 +47,31 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="/index">About Us</a></li>
-					<li><a href="/members">Members</a></li>
+					<li><a href="/">About Us</a></li>
+					<li {% if current[1] == 'members' %} class='active' {% endif %} >
+						<a href="/members">Members</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 							Missions <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="/mission-balloons">Weather Balloons</a></li>
-							<li><a href="/mission-microg">Micro-G</a></li>
-							<li><a href="/mission-cubesat">Cubesat</a></li>
-							<li><a href="/mission-nasabig">NASA BIG</a></li>
-							<li><a href="/mission-rascal">RASC-AL</a></li>
-							<li><a href="/mission-rockets">Rockets</a></li>
+							{% for node in site.pages %}
+								{% if page.url == node.url and node.group == "mission" %}
+									<li class="active"><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+								{% elsif node.group == "mission" %}
+									<li><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+								{% endif %}
+							{% endfor %}
 						</ul>
 					</li>
-					<li id="nav-logo"><a href="/"><img src="/assets/media/img/csi-logo-small.png"></a></li>
+					<li id="nav-logo"><a href="/" ><img src="/assets/media/img/csi-logo-small.png"></a></li>
 
-					<li><a href="/news">News</a></li>
-					<li><a href="/calendar">Calendar</a></li>
-					<!-- <li><a href="#">Outreach</a></li> -->
-					<li><a href="/contact">Contact</a></li>
+					<li {% if current[1] == 'news' %} class='active' {% endif %} >
+						<a href="/news">News</a></li>
+					<li {% if current[1] == 'calendar' %} class='active' {% endif %} >
+						<a href="/calendar">Calendar</a></li>
+					<li {% if current[1] == 'contact' %} class='active' {% endif %} >
+						<a href="/contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
