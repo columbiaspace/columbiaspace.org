@@ -1,14 +1,9 @@
 title: Columbia Space Initiative
 email: columbiaspace@gmail.com # why...
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  For the pursuit of knowledge in near-space, space, and beyond.
 url: "http://columbiaspace.github.io"
 baseurl: ""
-twitter_username: columbiasi
-github_username: columbiaspace
-facebook_username: ColumbiaSpaceInitiative
 
 # Build settings
 port: 5000
