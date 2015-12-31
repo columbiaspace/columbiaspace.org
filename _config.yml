@@ -1,8 +1,7 @@
 title: Columbia Space Initiative
 email: columbiaspace@gmail.com # why...
-description: > # this means to ignore newlines until "baseurl:"
-  For the pursuit of knowledge in near-space, space, and beyond.
-url: "http://columbiaspace.github.io"
+description: For the pursuit of knowledge in near-space, space, and beyond.
+url: "http://columbiaspace.org"
 baseurl: ""
 
 # Build settings
