@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Balloon Sponsorship"
-date:   2015-12-29
+title: "Balloon Sponsorship"
+date: 2015-12-29
+categories: balloons
 ---
 Our sponsor,
 [W2AEE Columbia University Amateur Radio Club](http://www.w2aee.columbia.edu),

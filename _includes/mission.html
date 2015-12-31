@@ -145,14 +145,16 @@
 				<div class="col-md-10">
 					<h3>Recent News</h3>
 					<!-- Begin news block -->
+					{% for post in site.categories[page.news-cat] %}
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>December 8th, 2015</h4>
+							<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
 						</div>
 						<div class="panel-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis omnis voluptates corporis asperiores vero tempora necessitatibus tempore nesciunt, sed impedit.</p>
+							<p>{{ post.content }}</p>
 						</div>
 					</div>
+					{% endfor %}
 					<!-- End news block -->
 				</div>
 				<div class="col-md-1"></div>
