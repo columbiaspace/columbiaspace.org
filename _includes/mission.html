@@ -1,0 +1,209 @@
+
+<!-- Group abstract here -->
+	<div class="group-abstract">
+		<div class="container">
+			<h2>
+				{{ page.abstracttitle }}
+			</h2>
+			<h2><small>
+				{{ page.abstracttext }}
+			</small></h2>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- Introduction here -->
+
+	<div class="mission-intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-3">
+					<h3>Introduction</h3>
+				</div>
+				<div class="col-md-7">
+					<p>{{ page.introtext }}</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<!-- Goals -->
+
+{% assign goalslist = page.goalstext | downcase | split: ';' %}
+{% if page.goals == true %}
+	<div class="mission-goals mission-list">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-3">
+					<h3>Mission Goals</h3>
+				</div>
+				<div class="col-md-7">
+					<ul>
+						{% for agoal in goalslist %}
+						<li>
+							<p>{{ goalslist[forloop.index0] }}</p>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+{% endif %}
+	<!-- Related Skills -->
+
+{% assign skillslist = page.skillstext | downcase | split: ';' %}
+{% if page.skills == true %}
+	<div class="mission-skills mission-list">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-3">
+					<h3>Related Skills</h3>
+				</div>
+				<div class="col-md-7">
+					<ul>
+						{% for askill in skillslist %}
+						<li>
+							<p>{{ skillslist[forloop.index0] }}</p>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+{% endif %}
+	<!-- Achievements -->
+
+{% assign achievementslist = page.achievementstext | downcase | split: ';' %}
+{% if page.achievements == true %}
+	<div class="mission-achieve mission-list">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-3">
+					<h3>Achievements</h3>
+				</div>
+				<div class="col-md-7">
+					<ul>
+						{% for anachivement in achievementslist %}
+						<li>
+							<p>{{ achievementslist[forloop.index0] }}</p>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+{% endif %}
+	<!-- Mission Leader -->
+
+	<div class="mission-leader">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-3">
+					<h3>Mission Director</h3>
+				</div>
+				<div class="col-md-2">
+					<div class="thumbnail">
+						<img src="{{page.leaderimage}}" alt="#">
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h3>{{ page.missionleader }}</h3>
+					<h3><small>{{ page.leaderschool }}</small></h3>
+					<h3><small>{{ page.leadermajor }}</small></h3>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<!-- Content Management here in the future -->
+	<!-- News for now -->
+{% if page.news == true %}
+	<div class="mission-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h3>Recent News</h3>
+					<!-- Begin news block -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>December 8th, 2015</h4>
+						</div>
+						<div class="panel-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis omnis voluptates corporis asperiores vero tempora necessitatibus tempore nesciunt, sed impedit.</p>
+						</div>
+					</div>
+					<!-- End news block -->
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+	<hr>
+{% endif %}
+
+		<!-- Media carousal -->
+{% assign medialist = page.medialinks | downcase | split: ';' %}
+{% if page.media == true %}
+	<div class="mission-media">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h3>Media</h3>
+					<div id="carousel-mission-media" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							{% for amedia in medialist %}
+							<li data-target="#carousel-mission-media" data-slide-to="{{forloop.index}}"></li>
+							{% endfor %}
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							{% for amedia in medialist %}
+							<div class="item">
+								<img src="{{medialist[forloop.index]}}" alt="">
+								<div class="carousel-caption">
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-mission-media" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-mission-media" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+	<hr>
+{% endif %}
