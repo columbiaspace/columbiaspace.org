@@ -8,7 +8,8 @@
 	<div class="navbar navbar-fixed-top" role="navigation" id="nav-desktop">
 		<div class="container-fluid">
 				<ul class="nav nav-justified nav-pills">
-					<li><a href="/">About Us</a></li>
+					<li {% if current[1] == null %} id="aboutNav" {% endif %} >
+					<a {% if current[1] == null %} href="#aboutsection" data-scroll="#aboutsection" {% else %} href="/#aboutsection" {% endif %}>About Us</a></li>
 					<li {% if current[1] == 'members' %} class='active' {% endif %} >
 						<a href="/members">Members</a></li>
 					<li class="dropdown">
@@ -25,7 +26,7 @@
 							{% endfor %}
 						</ul>
 					</li>
-					<li id="nav-logo"><a href="/" ><img src="/assets/media/img/csi-logo-small.png"></a></li>
+					<li {% if current[1] == null %} id="nav-index-logo" {% else %} id="nav-logo" {% endif %}><a href="/" ><img src="/assets/media/img/csi-logo-small.png"></a></li>
 
 					<li {% if current[1] == 'news' %} class='active' {% endif %} >
 						<a href="/news">News</a></li>
@@ -47,7 +48,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="/">About Us</a></li>
+					<li {% if current[1] == null %} id="aboutNav" {% endif %} >
+					<a {% if current[1] == null %} href="#aboutsection" data-scroll="#aboutsection" {% else %} href="/#aboutsection" {% endif %}>About Us</a></li>
 					<li {% if current[1] == 'members' %} class='active' {% endif %} >
 						<a href="/members">Members</a></li>
 					<li class="dropdown">
@@ -64,7 +66,7 @@
 							{% endfor %}
 						</ul>
 					</li>
-					<li id="nav-logo"><a href="/" ><img src="/assets/media/img/csi-logo-small.png"></a></li>
+					<li {% if current[1] == null %} id="nav-index-logo" {% else %} id="nav-logo" {% endif %}><a href="/" ><img src="/assets/media/img/csi-logo-small.png"></a></li>
 
 					<li {% if current[1] == 'news' %} class='active' {% endif %} >
 						<a href="/news">News</a></li>

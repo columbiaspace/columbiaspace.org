@@ -63,6 +63,10 @@ body a{
 	padding: 5px 20px 5px 20px !important;
 }
 
+.dropdown-menu {
+  width: 100%; 
+}
+
 /*Jumbotron*/
 
 .jumbotron {
@@ -249,6 +253,9 @@ body a{
 /*responsive stuff */
 @media screen and (max-width: 767px){
 	#nav-logo {
+		display: none;
+	}
+	#nav-index-logo {
 		display: none;
 	}
 	#desktop-cal {
