@@ -2,6 +2,7 @@
 layout: post
 title:  "Micro-G Update"
 date:   2015-11-13
+categories: microg
 ---
 We have submitted our preliminary design to NASA. The final design is an
 assembly of around 9 parts: the cone, shaft, 5 plates, piston, and blocking bar.
