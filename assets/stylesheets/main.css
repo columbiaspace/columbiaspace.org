@@ -149,15 +149,15 @@ body a{
 	font-size: 48px;
 }
 
+.group-highlight p{
+	font-size: 20px;
+}
+
 .group-highlight p, h2 {
+	text-align: left;
 	margin-top: 20px;
 	margin-bottom: 20px;
 
-}
-
-.group-highlight h2,
-.group-highlight p {
-	text-align: left;
 }
 
 #highlight1 {
