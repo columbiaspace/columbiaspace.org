@@ -33,7 +33,7 @@
 	<hr>
 	<!-- Goals -->
 
-{% assign goalslist = page.goalstext | downcase | split: ';' %}
+{% assign goalslist = page.goalstext | split: ';' %}
 {% if page.goals == true %}
 	<div class="mission-goals mission-list">
 		<div class="container">
@@ -60,7 +60,7 @@
 {% endif %}
 	<!-- Related Skills -->
 
-{% assign skillslist = page.skillstext | downcase | split: ';' %}
+{% assign skillslist = page.skillstext | split: ';' %}
 {% if page.skills == true %}
 	<div class="mission-skills mission-list">
 		<div class="container">
@@ -87,7 +87,7 @@
 {% endif %}
 	<!-- Achievements -->
 
-{% assign achievementslist = page.achievementstext | downcase | split: ';' %}
+{% assign achievementslist = page.achievementstext | split: ';' %}
 {% if page.achievements == true %}
 	<div class="mission-achieve mission-list">
 		<div class="container">
@@ -111,30 +111,43 @@
 	<hr>
 {% endif %}
 	<!-- Mission Leader -->
+{% assign leaderslist = page.missionleader | split: ';' %}
+{% assign schoollist = page.leaderschool | split: ';' %}
+{% assign majorlist = page.leadermajor | split: ';' %}
+{% assign profimglist = page.leaderimage | split: ';' %}
 
+{% for aleader in leaderslist %}
 	<div class="mission-leader">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-3">
-					<h3>Mission Director</h3>
+					<h3>{% if forloop.index0 == 0 %} 
+						{% if forloop.length == 1 %}
+						Mission Director
+						{% else %}
+						Mission Directors
+						{% endif %}
+						{% endif %}</h3>
 				</div>
 				<div class="col-md-2">
 					<div class="thumbnail">
-						<img src="{{page.leaderimage}}" alt="#">
+						<img src="{{ profimglist[forloop.index0] }}" alt="#">
 					</div>
 				</div>
 				<div class="col-md-5">
-					<h3>{{ page.missionleader }}</h3>
-					<h3><small>{{ page.leaderschool }}</small></h3>
-					<h3><small>{{ page.leadermajor }}</small></h3>
+					<h3>{{ leaderslist[forloop.index0] }}</h3>
+					<h3><small>{{ schoollist[forloop.index0] }}</small></h3>
+					<h3><small>{{ majorlist[forloop.index0] }}</small></h3>
 				</div>
 				<div class="col-md-1"></div>
 			</div>
 		</div>
 	</div>
+{% endfor %}
 
 	<hr>
+
 	<!-- Content Management here in the future -->
 	<!-- News for now -->
 {% if page.news == true %}
