@@ -67,6 +67,10 @@ body a{
   width: 100%; 
 }
 
+.oldmission a{
+	color: #777 !important;
+}
+
 /*Jumbotron*/
 
 .jumbotron {

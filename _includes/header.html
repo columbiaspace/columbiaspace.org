@@ -24,6 +24,13 @@
 									<li><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
 								{% endif %}
 							{% endfor %}
+							{% for node in site.pages %}
+								{% if page.url == node.url and node.group == "pastmission" %}
+									<li class="active oldmission"> <a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+								{% elsif node.group == "pastmission" %}
+									<li class="oldmission"> <a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+								{% endif %}
+							{% endfor %}
 						</ul>
 					</li>
 					<li {% if current[1] == null %} id="nav-index-logo" {% else %} id="nav-logo" {% endif %}><a href="/" ><img src="/assets/media/img/csi-logo-small.png"></a></li>
