@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Julia Di"
-date:   2016-11-13
-categories:
----
-Julia Di is supreme leader. That is all.
