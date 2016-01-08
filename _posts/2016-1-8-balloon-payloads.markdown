@@ -18,3 +18,5 @@ Here's a quick look at what we have left to do:
 - Determine launch logistics
 - Send some more emails and stuff
 - Purchase more materials through our CCSC grant
+
+-Jake Lee, Balloons Flight Director
