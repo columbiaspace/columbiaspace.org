@@ -19,6 +19,7 @@ This project is being continued from https://github.com/prichardsf/ColumbiaSpace
 3. Name the file with the following: year-month-date-subsection-title (e.g. "2015-11-13-micro-g-update")
 4. The template for your file should be:
 
+```
 ---
 layout: post
 title:  "Micro-G Update"
@@ -28,6 +29,7 @@ categories: microg
 Text goes here.
 
 -Sign it here!
+```
 
 5. Push your update.
 
