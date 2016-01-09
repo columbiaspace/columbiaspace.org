@@ -22,4 +22,11 @@ $(document).ready(function() {
         }, 600,'easeInOutQuart');
 	    window.location.hash = $(this).attr('href');
 	});
+
+	var input = document.querySelectorAll('input');
+	for(i=0; i<input.length; i++){
+		if(input[i].getAttribute('type') == "email"){
+			input[i].setAttribute('size',input[i].getAttribute('placeholder').length + 1);
+		}
+	}
 });
