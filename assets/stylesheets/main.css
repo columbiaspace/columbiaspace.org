@@ -268,6 +268,12 @@ body a{
 	#nav-desktop {
 		display: none;
 	}
+	.img-thumbnail {
+		max-width: 75%;
+	}
+	.thumbnail {
+		max-width: 75%;
+	}
 }
 
 @media not screen and (max-width: 767px){
@@ -277,6 +283,7 @@ body a{
 	#nav-mobile {
 		display: none;
 	}
+
 }
 
 /*font */
