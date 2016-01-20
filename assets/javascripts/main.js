@@ -29,4 +29,11 @@ $(document).ready(function() {
 			input[i].setAttribute('size',input[i].getAttribute('placeholder').length + 1);
 		}
 	}
+
+    $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyCrFoEKKvX6IgMKHETyyxbc6i4H5qvhaTs',
+        events: {
+            googleCalendarId: 'k1esjof3tmmr84i5um3812ni4s@group.calendar.google.com'
+        }
+    });
 });

@@ -262,9 +262,7 @@ body a{
 	#nav-index-logo {
 		display: none;
 	}
-	#desktop-cal {
-		display: none;
-	}
+
 	#nav-desktop {
 		display: none;
 	}
@@ -277,9 +275,6 @@ body a{
 }
 
 @media not screen and (max-width: 767px){
-	#mobile-cal {
-		display: none;
-	}
 	#nav-mobile {
 		display: none;
 	}
