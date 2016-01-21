@@ -1,6 +1,6 @@
 # The website of the Columbia Space Initiative
 
-This project is being continued from https://github.com/prichardsf/ColumbiaSpace . It should have been forked, but wasn't.
+This project is being continued from https://github.com/prichardsf/ColumbiaSpace .
 
 ## How to use GitHub
 
@@ -11,6 +11,15 @@ This project is being continued from https://github.com/prichardsf/ColumbiaSpace
 	2. You can make changes to these files, and then those changes will show up on the GitHub desktop client.
 4. To push changes to our master branch, simply click "Commit to Master" on the GitHub desktop client and then press "sync" on the top right.
 
+Note that you must be added as a contributer to this repo.
+
+## Website specs
+
+The website was initially designed with bootstrap, and later templated through jekyll. Focus was placed at providing clean content on all devices through responsive design and simplifying updating the website through templating.
+
+The mission pages of the website are completely templated to allow for non-developers to update the website. Most elements are scalable to require the least amount of maintenance as possible.
+
+The calendar implements the FullCalendar plugin, and the email signup is powered by mailchimp.
 
 ## How to make posts!
 
@@ -32,4 +41,11 @@ Text goes here.
 -Sign it here!
 ```
 
+## Contributors
+
+@jakehlee - Website design, content, Jekyll implementation
+
+@leee - Jekyll migration/implementation
+
+@prichards - Website design, content
 
