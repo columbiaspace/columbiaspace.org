@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "First Online Check-in With NASA"
-date:   2015-1-21
+title:  "Meeting Our NASA Mentor, Rebecca"
+date:   2015-1-8
 categories: microg
 ---
-We are currently in a Blackboard Collaborate session with the Micro-G Committee. We are going over safety reqirements and characterstics of the Neutral Buoyancy Laboratory where the tool will be tested. Thank you NASA for your resources! #Micro-gNeXT
+After some technical difficulties, we finally met with our Micro-G mentor! In an hour long call we discussed our design and established regular communication with her. We also fimrly recommend Google Hangouts for any video call for more than 5 people :)
 
 -Kristina
