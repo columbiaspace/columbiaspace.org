@@ -33,7 +33,7 @@ The calendar implements the FullCalendar plugin, and the email signup is powered
 ---
 layout: post
 title:  "Micro-G Update"
-date:   2015-11-13
+date:   2016-11-13
 categories: microg
 ---
 Text goes here.

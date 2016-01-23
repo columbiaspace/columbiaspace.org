@@ -196,6 +196,7 @@
 
 		<!-- Media carousal -->
 {% assign medialist = page.medialinks | downcase | split: ';' %}
+{% assign captionlist = page.mediacaptions | split: ';' %}
 {% if page.media == true %}
 	<div class="mission-media">
 		<div class="container">
@@ -219,6 +220,7 @@
 							{% if forloop.index0 == 0 %} active {% endif %}">
 								<img src="{{medialist[forloop.index0]}}" alt="">
 								<div class="carousel-caption">
+									<p>{{captionlist[forloop.index0]}}<p>
 								</div>
 							</div>
 							{% endfor %}
