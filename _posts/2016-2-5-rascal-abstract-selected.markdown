@@ -11,4 +11,6 @@ We'll be recuiting new members to join the RASC-AL team in the coming weeks - st
 
 -James
 
-![Imgur](http://i.imgur.com/imDW4HY.jpg)
+<p align="center">
+	<img src="http://i.imgur.com/imDW4HY.jpg" />
+</p>

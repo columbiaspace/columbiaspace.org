@@ -217,6 +217,10 @@ body a{
 	margin-top: 20px
 }
 
+.panel img{
+	max-width: 50%;
+}
+
 /* calendar sizes */
 .calendar{
 	text-align: center;

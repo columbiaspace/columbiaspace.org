@@ -10,4 +10,6 @@ Indeed, The Force Awakens turned out to be one of the most incredible cinematic 
 
 -James
 
-![alt text](https://scontent-yyz1-1.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12376263_1062157947150006_5410789742818369317_n.jpg?oh=397600c0ab7c22a1c893e9a9041cd8a1&oe=57423AC7 "CSI Star Wars trip")
+<p align="center">
+	<img src="/assets/media/img/posts/starwars.jpg" />
+</p>

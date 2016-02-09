@@ -41,6 +41,14 @@ Text goes here.
 -Sign it here!
 ```
 
+5. To imbed images in your posts, use this!
+
+```
+<p align="center">
+	<img src="/assets/media/img/specifypathhere.jpg" />
+</p>
+```
+
 ## Contributors
 
 @jakehlee - Website design, content, Jekyll implementation
