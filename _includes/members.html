@@ -1,0 +1,57 @@
+
+<!-- Group abstract here -->
+<div class="group-abstract">
+	<div class="container">
+	<h2>{{ page.abstracttitle }}</h2>
+	<h2><small>
+		 {{ page.abstracttext }}
+	</small></h2>
+	</div>
+</div>
+
+<!-- faculty members here -->
+
+<div class="faculty">
+	<div class="container">
+		<div class="row">
+			{% for aFaculty in page.faculty %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			<div class="col-sm-3">
+				<img src= "{{ aFaculty.image }}" alt="#" class="img-thumbnail">
+				<h1>{{ aFaculty.name }}</h1>
+				<h1><small>{{ aFaculty.title }}</small></h1>
+			</div>
+			{% if loopindex == 0 %}
+				</div>
+				<div class="row">
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<!-- Board Members here -->
+<div class="members">
+	<div class="container">
+		<div class="row">
+			{% for aMember in page.members %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			<div class="col-sm-3">
+				<img src= "{{ aMember.image }}" alt="#" class="img-thumbnail">
+				<h1>{{ aMember.name }}</h1>
+				<h1><small>{{ aMember.title }}</small></h1>
+			</div>
+			{% if loopindex == 0 %}
+				</div>
+				<hr>
+				<div class="row">
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<hr>
+

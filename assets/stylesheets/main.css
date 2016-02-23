@@ -97,6 +97,10 @@ body a{
 	height: 20%;
 }
 
+.jumbotron .hack-padding-2{
+	min-height: 60%;
+}
+
 .jumbotron .container {
 	color: #fff;
 	padding-left: 20px;
