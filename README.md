@@ -25,8 +25,9 @@ The calendar implements the FullCalendar plugin, and the email signup is powered
 
 1. Log in to your GitHub account.
 2. Create a new file under the folder "_posts"
-3. Name the file with the following: year-month-date-subsection-title.markdown (e.g. "2015-11-13-micro-g-update.markdown")
+3. Name the file with the following: `year-month-date-subsection-title.markdown` (e.g. `2015-11-13-micro-g-update.markdown`)
 	1. Note that this is a markdown file. You can read about formatting markdown files [here](https://help.github.com/articles/markdown-basics/) if you want fancier formatting for your post.
+	2. Also note that it must be `.markdown`, not `.mdown`
 4. The template for your file should be the following, and then just push your post when you're done!
 
 ```
