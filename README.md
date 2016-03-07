@@ -52,9 +52,9 @@ Text goes here.
 
 ## Contributors
 
-@jakehlee - Website design, content, Jekyll implementation
+[@jakehlee](https://github.com/jakehlee) - Website design, content, Jekyll implementation
 
-@leee - Jekyll migration/implementation
+[@leee](https://github.com/leee) - Jekyll migration/implementation
 
-@prichards - Website design, content
+[@prichardsf](https://github.com/prichardsf) - Website design, content
 
