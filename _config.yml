@@ -6,6 +6,6 @@ baseurl: ""
 
 # Build settings
 port: 5000
-highlighter: rogue
+highlighter: rouge
 markdown: kramdown
 permalink: pretty
