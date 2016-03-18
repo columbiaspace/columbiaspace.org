@@ -25,22 +25,26 @@ imagecredit: "Photo: NASA"
   <div class="container">
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-10">
-	<h2>All Recent News</h2>
-	<h2><small>Mission-specific news reports are on the mission pages</small></h2>
-	{% for post in site.posts %}
-	<!-- Begin news block -->
-	<div class="panel panel-default">
-	  <div class="panel-heading">
-	    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small></h3>
-	    <h4>{{ post.date | date: "%B %d, %Y" }}</h4>
-	  </div>
-	  <div class="panel-body">
-	    {{ post.content }}
-	  </div>
-	</div>
+      <div class="col-md-7">
+		<h2>All Recent News</h2>
+		<h2><small>Mission-specific news reports are on the mission pages</small></h2>
+		{% for post in site.posts %}
+		<!-- Begin news block -->
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small></h3>
+		    <h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+		  </div>
+		  <div class="panel-body">
+		    {{ post.content }}
+		  </div>
+		</div>
 	<!-- End news block -->
-	{% endfor %}
+		{% endfor %}
+      </div>
+      <div class="col-md-3">
+      	<h2>Twitter Feed</h2>
+      	<a class="twitter-timeline" href="https://twitter.com/ColumbiaSI" data-widget-id="710735580527616002">Tweets by @ColumbiaSI</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
       <div class="col-md-1"></div>
     </div>
