@@ -56,5 +56,5 @@ Text goes here.
 
 [@leee](https://github.com/leee) - Jekyll migration/implementation
 
-[@prichardsf](https://github.com/richards) - Website design, content
+[@richards](https://github.com/richards) - Website design, content
 
