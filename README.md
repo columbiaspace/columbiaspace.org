@@ -1,6 +1,6 @@
 # The website of the Columbia Space Initiative
 
-This project is being continued from https://github.com/prichardsf/ColumbiaSpace .
+This project is being continued from https://github.com/richards/ColumbiaSpace .
 
 ## How to use GitHub
 
@@ -56,5 +56,5 @@ Text goes here.
 
 [@leee](https://github.com/leee) - Jekyll migration/implementation
 
-[@prichardsf](https://github.com/prichardsf) - Website design, content
+[@prichardsf](https://github.com/richards) - Website design, content
 
