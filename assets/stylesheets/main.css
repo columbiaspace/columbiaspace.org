@@ -220,10 +220,18 @@ body a{
 .panel {
 	margin-top: 20px
 }
-
 .panel img{
 	max-width: 75%;
 	max-height: 100%;
+}
+.mission-news img{
+	max-width: 75%;
+	max-height: 100%;
+}
+
+.mission-specific-news img{
+	max-width: 60%;
+	max-height: 100%
 }
 
 /* calendar sizes */

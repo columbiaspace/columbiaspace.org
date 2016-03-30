@@ -165,26 +165,32 @@
 
 	<hr>
 
+	{{ content }}
+
+	<hr>
+
 	<!-- Content Management here in the future -->
 	<!-- News for now -->
 {% if page.news == true %}
-	<div class="mission-news">
+	<div class="mission-specific-news">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
 					<h3>Recent News</h3>
 					<!-- Begin news block -->
-					{% for post in site.categories[page.news-cat] %}
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+						{% for post in site.categories[page.news-cat] %}
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3>{{ post.title }}</h3>
+			    				<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+							</div>
+							<div class="panel-body">
+								<p>{{ post.content }}</p>
+							</div>
 						</div>
-						<div class="panel-body">
-							<p>{{ post.content }}</p>
-						</div>
+						{% endfor %}
 					</div>
-					{% endfor %}
 					<!-- End news block -->
 				</div>
 				<div class="col-md-1"></div>
