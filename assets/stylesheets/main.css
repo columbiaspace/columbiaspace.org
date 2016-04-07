@@ -345,3 +345,11 @@ body a{
     from {background-image: url("/assets/media/img/index/img1-long-dark-small.png");}
     to {background-image: url("/assets/media/img/index/img1-long-small.png");}
 }
+
+#confetti{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
