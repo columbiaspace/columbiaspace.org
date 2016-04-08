@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RASC-AL Project Selected as Finalist!"
+title:  "RASC-AL Mission Selected as Finalist!"
 date:   2016-4-1
 categories: rascal
 ---
