@@ -14,6 +14,6 @@ As we craft the two components of our final project in the coming weeks, you're 
 -James
 
 <p align="center">
-	<img src="http://imgur.com/xo0PZBT" />
+	<img src="http://i.imgur.com/xo0PZBT.jpg" />
 </p>
 *NASA JPL celebrates the successful landing of the Curiosity Rover on Mars*
