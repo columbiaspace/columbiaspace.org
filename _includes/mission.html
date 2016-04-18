@@ -187,7 +187,16 @@
 							</div>
 							<div class="panel-body">
 								<p>
-						        	<a href="{{ post.url }}"><span class="glyphicon glyphicon-link" aria-hidden="true" title="permalink"></span></a>
+							        <a href="{{ post.url }}"><span class="glyphicon glyphicon-link" aria-hidden="true" title="permalink"></span></a>
+							        <a class="btn btn-social-icon btn-xs btn-facebook" href="http://www.facebook.com/sharer.php?u=www.columbiaspace.org{{ post.url }}&p[title]=CSI" style="margin-bottom:8px;">
+							        	<span class="fa fa-facebook"></span>
+							        </a>
+							        <a class="btn btn-social-icon btn-xs btn-twitter" href="http://twitter.com/share?text={{ post.title }}: CSI&url=http://www.columbiaspace.org{{ post.url }}&via=ColumbiaSI" style="margin-bottom:8px;">
+							        	<span class="fa fa-twitter"></span>
+							        </a>
+							        <a class="btn btn-social-icon btn-xs btn-reddit" href="http://www.reddit.com/submit?url=www.columbiaspace.org{{ post.url }}&title={{ post.title }}: Columbia Space Initiative" style="margin-bottom:8px;">
+							            <span class="fa fa-reddit"></span>
+							        </a>
 						        </p>
 								<p>{{ post.content }}</p>
 							</div>
