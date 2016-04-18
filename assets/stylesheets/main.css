@@ -268,7 +268,11 @@ body a{
 }
 
 .footer p{
-	font-size: 12px
+	font-size: 12px;
+}
+
+.tenphack{
+	height: 10%;
 }
 
 /*responsive stuff */

@@ -30,10 +30,13 @@ imagecredit: "Photo: NASA"
 		<h2><small>Mission-specific news reports are on the mission pages</small></h2>
 		{% for post in site.posts %}
 		<!-- Begin news block -->
-		<div class="panel panel-default">
+		<div class="panel panel-default" id="{{ post.title }}">
 		  <div class="panel-heading">
-		    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small></h3>
-		    <h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+		    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small> </h3> 
+		    <h4 style="display:inline;">{{ post.date | date: "%B %d, %Y" }} </h4>
+        <p style="display:inline;">
+          <a href="{{ post.url }}"><span class="glyphicon glyphicon-link" aria-hidden="true" title="permalink"></span></a>
+        </p>
 		  </div>
 		  <div class="panel-body">
 		    {{ post.content }}
