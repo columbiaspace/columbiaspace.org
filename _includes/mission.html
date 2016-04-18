@@ -182,10 +182,13 @@
 						{% for post in site.categories[page.news-cat] %}
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h3>{{ post.title }}</h3>
-			    				<h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+							    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small> </h3> 
+							    <h4>{{ post.date | date: "%B %d, %Y" }} </h4>
 							</div>
 							<div class="panel-body">
+								<p>
+						        	<a href="{{ post.url }}"><span class="glyphicon glyphicon-link" aria-hidden="true" title="permalink"></span></a>
+						        </p>
 								<p>{{ post.content }}</p>
 							</div>
 						</div>
