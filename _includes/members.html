@@ -9,6 +9,7 @@
 	</div>
 </div>
 
+<hr>
 <!-- faculty members here -->
 
 <div class="faculty">
@@ -49,6 +50,28 @@
 				<div class="row">
 			{% endif %}
 			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<div class="genbody">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>General Body Members</h3>
+				<table class="table table-striped">
+				{% for aGenMember in page.genbody %}
+				<tr>
+					<th>{{ aGenMember.name }}</th>
+					<td>{{ aGenMember.school }}</td>
+					<td>{{ aGenMember.major }}</td>
+				</tr>
+				{% endfor %}
+				</table>
+				<p><small>For changes, please contact our email.</small></p>
+			</div>
 		</div>
 	</div>
 </div>
