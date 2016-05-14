@@ -90,9 +90,14 @@
 			<div class="col-sm-12">
 				<h3>General Body Members</h3>
 				<table class="table table-striped">
+				<thead><tr>
+					<th>Name</th>
+					<th>School/Year</th>
+					<th>Major</th>
+				</tr></thead>
 				{% for aGenMember in page.genbody %}
 				<tr>
-					<th>{{ aGenMember.name }}</th>
+					<td>{{ aGenMember.name }}</td>
 					<td>{{ aGenMember.school }}</td>
 					<td>{{ aGenMember.major }}</td>
 				</tr>
