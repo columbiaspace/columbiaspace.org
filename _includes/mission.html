@@ -11,18 +11,15 @@
 		</div>
 	</div>
 
-	{% if page.group == "pastmission" %}
+	{% if page.alert != ~ %}
 	<div class="topmessage">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
+				<div class="col-md-12">
 					<div class="alert alert-warning" role="alert">
-						<strong>This is an archived mission.</strong>
-						This mission is considered completed or inactive.
+						{{ page.alert }}
 					</div>
 				</div>
-				<div class="col-md-1"></div>
 			</div>
 		</div>
 	</div>
