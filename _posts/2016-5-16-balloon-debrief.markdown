@@ -11,7 +11,7 @@ I've wanted to make this post for a while, but life and finals got in the way. I
 
 First of all, thank you to everyone that contributed to this mission. We couldn't have done it without you all.
 
-##Flight Details
+## Flight Details
 
 The balloon was launched on April 16th, 2016 just before 4pm EST near Prattsville, NY. We had initially planned for the launch to be before noon to make recovery easier, but delays and technical issues pushed the launch time back.
 
@@ -21,7 +21,7 @@ The balloon landed in the backyard of a farm house around 6:44pm. It landed in t
 
 The maximum altitude of our balloon is rank 88 on [arhab.org](www.arhab.org)
 
-##Launch Notes
+## Launch Notes
 
 Having multiple possible launch locations was crucial - launch sites became unavailable due to weather and logistics changes.
 
@@ -41,7 +41,7 @@ We need to launch much earlier next time ensure we can recover before sunset. Th
 
 The GoPro battery ran out early (we had the cheapest model) so we only got footage up to ~70,000 ft. We're looking into acquiring a better GoPro along with a battery backpack. 
 
-##Results
+## Results
 
 We will start going through the data more thoroughly now, especially with more time in the summer. We'll post any results or findings here.
 
@@ -52,7 +52,7 @@ We released our Youtube video of the launch, watch it [here](https://www.youtube
 The Columbia University Facebook page wrote a post about us, read it [here](https://www.facebook.com/columbia/photos/a.10150823501978937.396316.102471088936/10153719505858937/?type=3)
 
 
-##The Future
+## The Future
 
 With a successful launch under our belt, we can look forward to doing more exciting and ambitious things!
 
