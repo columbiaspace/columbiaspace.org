@@ -41,4 +41,9 @@
   <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
   <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#084498">
+
+  <!-- Google Analytics trick to avoid errors from jekyll serve-->
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </head>

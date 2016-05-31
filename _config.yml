@@ -9,3 +9,6 @@ port: 5000
 highlighter: rouge
 markdown: kramdown
 permalink: pretty
+
+# Google Analytics
+google_analytics: UA-78617707-1
