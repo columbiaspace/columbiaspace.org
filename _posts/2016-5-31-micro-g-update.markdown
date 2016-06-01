@@ -10,14 +10,14 @@ categories: microg
 
 Well, if you follow us on social media you'll know that we went to Houston last week to test our asteroid anchor. Without further ado, here's our mission debrief:
 
-##The Lion Claw is a success! 
+## The Lion Claw is a success! 
 
 We had started this process in December with our initial concept, but quickly realized that our design was impossible to manufacture. Starting anew, we had another design and prototype by March - only to see that it had failed to hold the 10 lbs of force during testing. 
 
 Into this week were betting on a new design and scrambled to manufacture and test it. Kristina and Tamás, our team leads, had many a sleepless night over the anchor. We had only tested the anchor underwater a few times before making the trip to Houston. Although the anchor had worked in our underwater test, we were still understandbly nervous about the anchor - would it work in the NBL? would it pass NASA's stringent safety inspection?
 
 <p align="center">
- <img src = "/assets/media/img/microg/TCB.jpg" />
+ <img src = "/assets/media/img/microg/TCB.JPG" />
 </p>
 
 But to our delight, our anchor did pass - in all respects. On our first day in Houston, we had our Technical Readiness Review, in which we proved to NASA specialists that our tool was safe for use in the NBL. After some filing of sharp edges and softening wire tips, we were good to go. 
