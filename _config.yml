@@ -5,10 +5,11 @@ url: "http://columbiaspace.org"
 baseurl: ""
 
 # Build settings
-port: 5000
 highlighter: rouge
 markdown: kramdown
 permalink: pretty
+exclude:
+  - vendor
 
 # Google Analytics
 google_analytics: UA-78617707-1
