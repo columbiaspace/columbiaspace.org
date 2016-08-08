@@ -12,5 +12,5 @@ We'll be recuiting new members to join the RASC-AL team in the coming weeks - st
 -James
 
 <p align="center">
-	<img src="http://i.imgur.com/imDW4HY.jpg" />
+	<img src="/assets/media/img/posts/rascal.jpg" />
 </p>
