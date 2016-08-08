@@ -5,7 +5,7 @@ rvm:
 script:
   - bundle exec rubocop
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --check-favicon --check-html
+  - bundle exec htmlproofer ./_site # --check-favicon --check-html
 
 env:
   global:
