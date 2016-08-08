@@ -15,5 +15,3 @@ sudo: false # route your build to the container-based infrastructure for a faste
 
 notifications:
   slack: columbiaspace:HZMOaxVpuQwUOIcAXkAxECkp
-    on_success: always
-    on_failure: always
