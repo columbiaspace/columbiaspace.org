@@ -1,5 +1,5 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "html-proofer"
-gem "rubocop"
+gem 'jekyll'
+gem 'html-proofer'
+gem 'rubocop'
