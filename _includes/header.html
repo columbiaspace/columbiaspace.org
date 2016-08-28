@@ -34,6 +34,7 @@
 									<li><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
 								{% endif %}
 							{% endfor %}
+							<li class="divider"></li>
 							{% for node in site.pages %}
 								{% if page.url == node.url and node.group == "pastmission" %}
 									<li class="active oldmission"> <a href="{{node.url}}">{{node.jumbotitle}}</a></li>
