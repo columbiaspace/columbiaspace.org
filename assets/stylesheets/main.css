@@ -20,6 +20,10 @@ body h1, h2, h3{
 	font-family: 'futura', sans-serif !important;
 }
 
+.cursor {
+    cursor: url('/assets/cursors/drake.cur'), default !important;
+}
+
 /* Navbar */
 .navbar {
 	background-color: rgba(255,255,255,1);

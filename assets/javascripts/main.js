@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	var navOffset = $('.navbar').height();
+	var isDrake = false;
 	console.log(navOffset);
 
 	$('body').scrollspy({
@@ -21,6 +22,19 @@ $(document).ready(function() {
             scrollTop: "0px"
         }, 600,'easeInOutQuart');
 	    window.location.hash = $(this).attr('href');
+	});
+
+	$('#drakeme_button').click(function(event) {
+		event.preventDefault();
+		console.log("triggered");
+		if(isDrake){
+			$('html,body').removeClass('cursor');
+			isDrake = false;
+		}else{
+			$('html,body').addClass('cursor');
+			isDrake = true;
+		}
+		
 	});
 
 	var input = document.querySelectorAll('input');
