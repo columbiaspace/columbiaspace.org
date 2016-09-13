@@ -15,4 +15,4 @@ env:
 sudo: false # route your build to the container-based infrastructure for a faster build
 
 notifications:
-  slack: columbiaspace:HZMOaxVpuQwUOIcAXkAxECkp
+  slack: columbiaspace:2ykykBYIAo81FrdsXcc3AiVX
