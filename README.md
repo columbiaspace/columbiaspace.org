@@ -1,12 +1,11 @@
-# The website of the Columbia Space Initiative
-
-This project is being continued from https://github.com/richards/ColumbiaSpace .
+<img style="float: right;" src="http://columbiaspace.org/assets/media/img/csi-logo-small.png">
+[![Build Status](https://travis-ci.org/columbiaspace/columbiaspace.github.io.svg?branch=master)](https://travis-ci.org/columbiaspace/columbiaspace.github.io)
 
 ## How to use GitHub
 
 1. Make an account on GitHub.
 2. Download the desktop client at desktop.github.com
-3. Clone our CSI repo at https://github.com/columbiaspace/columbiaspace.github.io 
+3. Clone our CSI repo at https://github.com/columbiaspace/columbiaspace.github.io
 	1. This will download our files to your computer.
 	2. You can make changes to these files, and then those changes will show up on the GitHub desktop client.
 4. To push changes to our master branch, simply click "Commit to Master" on the GitHub desktop client and then press "sync" on the top right.
@@ -46,7 +45,7 @@ Text goes here.
 
 ```
 <p align="center">
-	<img src="/assets/media/img/specifypathhere.jpg" />
+	<img src="/assets/media/img/specifypathhere.jpg" alt="a quick work or two" />
 </p>
 ```
 
@@ -57,4 +56,3 @@ Text goes here.
 [@leee](https://github.com/leee) - Jekyll migration/implementation
 
 [@richards](https://github.com/richards) - Website design, content
-
