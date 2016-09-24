@@ -30,7 +30,7 @@ We were very grateful for this, as by the time we reached the payload it had
 gotten dark. Landing in a more difficult location would have required recovery 
 on a different day.
 
-The maximum altitude of our balloon is rank 88 on [arhab.org](www.arhab.org)
+The maximum altitude of our balloon is rank 88 on [arhab.org](http://arhab.org)
 
 ## Launch Notes
 
