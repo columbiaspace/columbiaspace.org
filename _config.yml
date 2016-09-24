@@ -13,3 +13,26 @@ exclude:
 
 # Google Analytics
 google_analytics: UA-78617707-1
+
+# prose.io
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://columbiaspace.org'
+  media: 'assets/media'
+  ignore:
+    - /_includes
+    - /_layouts
+    - /_sass
+    - .gitignore
+    - .travis.yml
+    - 404.html
+    - CNAME
+    - Gemfile
+    - _config.yml
+    - calendar.html
+    - contact.html
+    - feed.xml
+    - index.html
+    # get members into a directory of their own
+    # same goes for missions and pastmissions
+    - news.html
