@@ -42,12 +42,12 @@ body a{
 	color: #084498;
 }
 
-#header-logo img{
+.nav-logo img{
 	max-width: 30px;
 	max-height: 30px;
 }
 
-#nav-index-logo img{
+.nav-index-logo img{
 	max-width: 30px;
 	max-height: 30px;
 }
