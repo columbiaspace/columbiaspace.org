@@ -1,5 +1,5 @@
 <img style="float: right;" src="https://columbiaspace.org/assets/media/img/csi-logo-small.png">
-[![Build Status](https://travis-ci.org/columbiaspace/columbiaspace.github.io.svg?branch=master)](https://travis-ci.org/columbiaspace/columbiaspace.github.io)
+[![Build Status](https://travis-ci.org/columbiaspace/columbiaspace.org.svg?branch=master)](https://travis-ci.org/columbiaspace/columbiaspace.org)
 
 ## How to use GitHub
 
