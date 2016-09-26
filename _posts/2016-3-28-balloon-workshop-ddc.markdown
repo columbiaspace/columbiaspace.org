@@ -17,11 +17,11 @@ hosting us. We hope that we will be able to come back after our launch in
 mid-April and share some science and fun from our project.
 
 Any other organizations that are interested in hosting a similar workshop can 
-contact us at our [contact page](http://columbiaspace.org/contact/).
+contact us at our [contact page](https://columbiaspace.org/contact/).
 
 The resources used in the workshop, including the presentation and the 
 accompanying notes, are available on the [balloons mission 
-page](http://columbiaspace.org/mission-balloons/).
+page](https://columbiaspace.org/mission-balloons/).
 
 <p align="center">
 	<img src="/assets/media/img/posts/ddc1.jpg" />

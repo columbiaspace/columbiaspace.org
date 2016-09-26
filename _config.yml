@@ -1,7 +1,7 @@
 title: Columbia Space Initiative
 email: columbiaspace@gmail.com # why...
 description: For the pursuit of knowledge in near-space, space, and beyond.
-url: "http://columbiaspace.org"
+url: "https://columbiaspace.org"
 baseurl: ""
 
 # Build settings
@@ -17,7 +17,7 @@ google_analytics: UA-78617707-1
 # prose.io
 prose:
   rooturl: '_posts'
-  siteurl: 'http://columbiaspace.org'
+  siteurl: 'https://columbiaspace.org'
   media: 'assets/media'
   ignore:
     - /_includes
