@@ -32,6 +32,6 @@ more info on travel logistics to come.
 -James
 
 <p align="center">
-	<img src="/assets/media/img/rascal2.jpg" />
+	<img src="/assets/media/img/posts/rascal2.jpg"/>
 </p>
 *NASA JPL celebrates the successful landing of the Curiosity Rover on Mars*
