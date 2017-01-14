@@ -124,6 +124,13 @@ body a{
 	padding-right: 10px;
 }
 
+/*about*/
+#about-image{
+	max-width: 30%
+}
+
+.about-center h2{text-align: center;}
+
 /*abstract*/
 
 .group-abstract .container{
