@@ -20,6 +20,7 @@ Furthermore, both drills will be moved by a gantry system mounted atop our simul
 Our upcoming deadline is the Mid-Project Review on April 2nd, when we will be submitting a video of our drill prototype in action, featuring its mounting system, control interface, and operation excavating overburden and ice. In addition, we'll be submitting a written document describing our development process and our integration and testing plan.
 
 Ad astra!
+
 -James
 
 <p align="center">
