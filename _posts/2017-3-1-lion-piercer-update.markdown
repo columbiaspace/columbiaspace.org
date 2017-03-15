@@ -23,5 +23,5 @@ Ad astra!
 -James
 
 <p align="center">
-    <img src="/assets/media/img/rascal/patch2.png" />
+    <img src="/assets/media/img/rascal/patch2.jpg" />
 </p>
