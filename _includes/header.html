@@ -13,6 +13,7 @@
 					<li {% if current[1] == null %} class="aboutNav" {% endif %} >
 					<a {% if current[1] == null %} href="#aboutsection" data-scroll="#aboutsection" {% else %} href="/#aboutsection" {% endif %}>About Us</a></li>	
 				-->	
+					<li {% if current[1] == null %} class="nav-index-logo" {% else %} class="nav-logo" {% endif %}><a href="/" ><img src="/assets/media/img/csi-logo-small.png" alt="Columbia Space Initiative"></a></li>
 					<li {% if current[1] == 'about' %} class='active' {% endif %} >
 						<a href="/about">About</a></li>
 					
@@ -50,8 +51,8 @@
 							{% endfor %}
 						</ul>
 					</li>
-					<li {% if current[1] == null %} class="nav-index-logo" {% else %} class="nav-logo" {% endif %}><a href="/" ><img src="/assets/media/img/csi-logo-small.png" alt="Columbia Space Initiative"></a></li>
-
+					<li {% if current[1] == 'sponsors' %} class='active' {% endif %} >
+						<a href="/sponsors/2016/">Sponsors</a></li>
 					<li {% if current[1] == 'news' %} class='active' {% endif %} >
 						<a href="/news">News</a></li>
 					<li {% if current[1] == 'calendar' %} class='active' {% endif %} >
@@ -72,6 +73,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
+					<li {% if current[1] == null %} class="nav-index-logo" {% else %} class="nav-logo" {% endif %}><a href="/" ><img src="/assets/media/img/csi-logo-small.png" alt="Columbia Space Initiative"></a></li>
 					<li {% if current[1] == null %} class="aboutNav" {% endif %} >
 					<a {% if current[1] == null %} href="#aboutsection" data-scroll="#aboutsection" {% else %} href="/#aboutsection" {% endif %}>About Us</a></li>
 					<li class="dropdown">
@@ -99,9 +101,9 @@
 								{% endif %}
 							{% endfor %}
 						</ul>
-					</li>
-					<li {% if current[1] == null %} class="nav-index-logo" {% else %} class="nav-logo" {% endif %}><a href="/" ><img src="/assets/media/img/csi-logo-small.png" alt="Columbia Space Initiative"></a></li>
-
+					</li>					
+					<li {% if current[1] == 'sponsors' %} class='active' {% endif %} >
+						<a href="/sponsors/2016/">Sponsors</a></li>
 					<li {% if current[1] == 'news' %} class='active' {% endif %} >
 						<a href="/news">News</a></li>
 					<li {% if current[1] == 'calendar' %} class='active' {% endif %} >
