@@ -128,7 +128,7 @@
 					<ul>
 						{% for anachivement in achievementslist %}
 						<li>
-							<p>{{ achievementslist[forloop.index0] }}</p>
+							<p>{{ achievementslist[forloop.index0] | markdownify}}</p>
 						</li>
 						{% endfor %}
 					</ul>
