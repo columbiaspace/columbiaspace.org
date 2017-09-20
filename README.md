@@ -54,4 +54,4 @@ Text goes here.
 
 [@leee](https://github.com/leee) - Jekyll migration/implementation
 
-[@pr](https://github.com/richards) - Website design, content, Jekyll implementation
+[@pr](https://github.com/pr) - Website design, content, Jekyll implementation
