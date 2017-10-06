@@ -140,6 +140,7 @@
 {% endif %}
 	<!-- Mission Leader -->
 {% assign leaderslist = page.missionleader | split: ';' %}
+{% assign rolelist = page.leaderrole | split: ';' %}
 {% assign schoollist = page.leaderschool | split: ';' %}
 {% assign majorlist = page.leadermajor | split: ';' %}
 {% assign profimglist = page.leaderimage | split: ';' %}
@@ -150,7 +151,7 @@
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-3">
-					<h3>{% if forloop.index0 == 0 %} 
+					<h3>{% if forloop.index0 == 0 %}
 						{% if forloop.length == 1 %}
 						Mission Director
 						{% else %}
@@ -165,6 +166,7 @@
 				</div>
 				<div class="col-md-5">
 					<h3>{{ leaderslist[forloop.index0] }}</h3>
+					<h3><small>{{ rolelist[forloop.index0] }}</small></h3>
 					<h3><small>{{ schoollist[forloop.index0] }}</small></h3>
 					<h3><small>{{ majorlist[forloop.index0] }}</small></h3>
 				</div>
@@ -193,7 +195,7 @@
 						{% for post in site.categories[page.news-cat] %}
 						<div class="panel panel-default">
 							<div class="panel-heading">
-							    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small> </h3> 
+							    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small> </h3>
 							    <h4>{{ post.date | date: "%B %d, %Y" }} </h4>
 							</div>
 							<div class="panel-body">
@@ -245,7 +247,7 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							{% for amedia in medialist %}
-							<div class="item 
+							<div class="item
 							{% if forloop.index0 == 0 %} active {% endif %}">
 								<img src="{{medialist[forloop.index0]}}" alt="">
 								<div class="carousel-caption">
