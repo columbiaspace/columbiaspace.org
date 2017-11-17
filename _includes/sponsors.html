@@ -3,13 +3,36 @@
 <div class="group-abstract">
 	<div class="container">
 	<h2>Supporting our Missions.</h2>
+	<div class="col-md-7">
+		<p>{{ page.introtext }}</p>
+	</div>
 	<h2><small>
-	  If you are interested in sponsoring the team, please see our <a href="/assets/media/docs/CSI_sponsor_packet.pdf">sponsorship packet</a> and <a href="mailto:columbiaspaceinitiative@gmail.com">get in touch</a>! 
+	  If you are interested in sponsoring the team, please see our <a href="/assets/media/docs/CSI_sponsor_packet.pdf">sponsorship packet</a> and <a href="mailto:columbiaspaceinitiative@gmail.com">get in touch</a>!
     </small></h2>
 	</div>
 </div>
 
 <hr>
+
+<div class="grants">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Grants</h3>
+			</div>
+			{% for aGrantsSponsor in page.grants %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			<div class="col-sm-4">
+				<a href="{{ aGrantsSponsor.link }}">
+					<div class="thumbnail">
+					<img src="{{ aGrantsSponsor.logo }}" alt="{{ aGrantsSponsor.name }}" />
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
 
 <!-- We can flush this out when we have more sponsors, I see having all 5 catagories templated -->
 
@@ -17,25 +40,22 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1"></div>
-			<div class="col-md-3">
+			<div class="col-md-12">
 				<h3>Asteroidal Level</h3>
 			</div>
 			{% for aAsteroidalSponsor in page.asteroidal %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-2">
-				<div class="thumbnail">
-					<img src="{{ aAsteroidalSponsor.logo }}" alt="{{ aAsteroidalSponsor.name }}">
-				</div>
-			</div>
-			<div class="col-md-5">
-					<p>{{ aAsteroidalSponsor.blurb }}</p>
+				<a href="{{ aAsteroidalSponsor.link}}">
+					<div class="thumbnail">
+						<img src="{{ aAsteroidalSponsor.logo }}" alt="{{ aAsteroidalSponsor.name }}">
+					</div>
+				</a>
 			</div>
 			{% endfor %}
 			<div class="col-md-1"></div>
 		</div>
 	</div>
 </div>
-	
+
 <hr>
-
-
