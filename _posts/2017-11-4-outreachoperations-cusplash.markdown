@@ -4,7 +4,7 @@ title:  "Fall 2017 CU Splash"
 date:   2017-11-4
 categories: outreachoperations
 ---
-This Saturday was our fourth(?) time participating in CU Splash, a day-long event for high school students to learn topics outside of the classroom. We taught a course called "Intro to Space Exploration," where we introduced basic orbital mechanics, propellants, space history, and challenges in space.
+This Saturday was our third time participating in CU Splash, a day-long event for high school students to learn topics outside of the classroom. We taught a course called "Intro to Space Exploration," where we introduced basic orbital mechanics, propellants, space history, and challenges in space.
 
 <p align="center">
 	<img src="/assets/media/img/outreach-operations/F17-Splash-1.png">
