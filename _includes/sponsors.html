@@ -35,6 +35,27 @@
 </div>
 
 <!-- We can flush this out when we have more sponsors, I see having all 5 catagories templated -->
+<div class="planetary">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-12">
+				<h3>Planetary Level</h3>
+			</div>
+			{% for aPlanetarySponsor in page.planetary %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			<div class="col-sm-3">
+				<a href="{{ aPlanetarySponsor.link}}">
+					<div class="thumbnail">
+						<img src="{{ aPlanetarySponsor.logo }}" alt="{{ aPlanetarySponsor.name }}">
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+</div>
 
 <div class="asteroidal">
 	<div class="container">
@@ -45,7 +66,7 @@
 			</div>
 			{% for aAsteroidalSponsor in page.asteroidal %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
-			<div class="col-sm-2">
+			<div class="col-sm-3">
 				<a href="{{ aAsteroidalSponsor.link}}">
 					<div class="thumbnail">
 						<img src="{{ aAsteroidalSponsor.logo }}" alt="{{ aAsteroidalSponsor.name }}">
@@ -54,6 +75,18 @@
 			</div>
 			{% endfor %}
 			<div class="col-md-1"></div>
+		</div>
+	</div>
+</div>
+
+<div>
+	<div class="container">
+		<div class="row">
+				<div class="col-md-12">
+					<p>
+						Sponsorship levels: Asteroidal ($50-$499), Planetary ($500-$1499), Solar ($1500-$4999), Galactic ($5000-$9999).
+					</p>
+				</div>
 		</div>
 	</div>
 </div>
