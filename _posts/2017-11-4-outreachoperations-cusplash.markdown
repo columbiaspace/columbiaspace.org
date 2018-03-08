@@ -21,3 +21,5 @@ In addition to the science, we discussed commercial space companies, internation
 We held two sections and each had 40+ students. We had lots of fun inspiring the next generation of space travelers.
 
 Thank you to Leena, ShaSha, Caleb, Tejit, Lily, Megan, Chris, and Garrett for making this day of space learning possible.
+
+-- Lily He
