@@ -20,6 +20,10 @@ body h1, h2, h3{
 	font-family: 'futura', sans-serif !important;
 }
 
+ul, ol{
+	font-size: 18px;
+	font-family: 'ProximaNova-Reg' !important;
+}
 .cursor {
     cursor: url('/assets/cursors/drake.cur'), default !important;
 }
@@ -29,7 +33,7 @@ body h1, h2, h3{
 	background-color: rgba(255,255,255,1);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-	
+
 .nav {
 	font-size: 18px;
 }
@@ -69,7 +73,7 @@ body a{
 }
 
 .dropdown-menu {
-  width: 100%; 
+  width: 100%;
 }
 
 .oldmission a{
