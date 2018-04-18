@@ -69,6 +69,7 @@ body a{
 
 .navbar .dropdown-menu li a{
 	text-align: center;
+	font-size: 13px;
 	padding: 5px 20px 5px 20px !important;
 }
 
