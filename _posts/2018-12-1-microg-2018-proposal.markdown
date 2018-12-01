@@ -22,12 +22,14 @@ Our device utilizes detection bars that slide along the face of the handrail and
 
 When a sharp edge is detected, a red signal appears. This tells the astronaut to lift the device from the railing and move the detection device to the side, which will reveal nozzles that contain fast drying covering paste. As the astronaut depresses the plunger, covering paste is squeezed onto the bar. The astronaut can then drag the device over the area covered to help smooth the covering paste across the face.
 
+## Moving Forward
+A current design challenge for our team is to design a better way for astronauts to grip the device. Currently the body of the device is cubic and requires astronauts to grip around the body’s edges. We plan to create a covering grip, or shape the body differently, so that is better suited to the shape of the astronauts glove and relies less on grip strength.
+
 <p align="center">
 	<img src="/assets/media/img/microg/2018-12-1-proposal-1.png">
   <img src="/assets/media/img/microg/2018-12-1-proposal-2.png">
 </p>
 
-## Moving Forward
-A current design challenge for our team is to design a better way for astronauts to grip the device. Currently the body of the device is cubic and requires astronauts to grip around the body’s edges. We plan to create a covering grip, or shape the body differently, so that is better suited to the shape of the astronauts glove and relies less on grip strength.
+As of now, we are moving from the design phase into the prototype phase. We are currently pending acceptance for NASA’s competition at the Johnson Space Center this spring! Wish us luck :)
 
 -- Micro-g Team
