@@ -257,6 +257,10 @@ body a{
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
+/* press */
+.press-article {
+	padding: 1%;
+}
 
 /* footer */
 .footer{
