@@ -154,72 +154,31 @@ body a{
 	background-color: rgba(255,255,255,0.8);
 }
 
-/*highlights on index */
-
-.group-highlight {
-	height: 100%;
-	/* account for navbar height */
-	display: flex;
-    justify-content: center;
-    align-items: center;
+/* cards on index */
+.font-italic {
+	font-style: italic;
 }
-
-.group-highlight .container {
+.index-header {
+	padding: 5%
+}
+/* podcast: This is Rocket Science*/
+#spotify-embed {
 	width: 80%;
-	height: 30%;
-	padding-left: 50px;
-	padding-right: 50px;
-	margin: 0 auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+	height: 430px;
 }
 
-@media screen and (max-width: 767px){
-	.group-highlight .container {
-		width: 90%;
-		height: 90%;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin: 0 auto;
-	}
+.mission-preview {
+	border-left: 4px solid rgb(71, 77, 164);
+}
+.mission-card {
+	position:relative;
+  overflow:hidden;
+  padding-bottom:100%;
 }
 
-.group-highlight h2{
-	font-size: 48px;
-}
-
-.group-highlight p{
-	font-size: 20px;
-}
-
-.group-highlight p, h2 {
-	text-align: left;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
-}
-
-.group-highlight .row{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-#highlight1 {
-	background-image: url("/assets/media/img/index/mission3-long.jpg");
-	background-size: cover;
-	background-position: center;
-}
-
-#highlight2 {
-	background-image: url("/assets/media/img/index/mission4-long.jpg");
-	background-size: cover;
-	background-position: center;
-}
-
-#highlight3 {
-	background-image: url("/assets/media/img/index/members1-long.jpg");
-	background-size: cover;
-	background-position: center;
+.mission-card img {
+	position:absolute;
+	border-radius: 2px;
 }
 
 /*signup*/
@@ -227,6 +186,7 @@ body a{
 .sign-up {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	background-color: rgba(185, 220, 251, 1);
 }
 
 .social .container {
@@ -296,6 +256,10 @@ body a{
 
 .carousel-inner > .item > img {
     margin: 0 auto;
+}
+/* press */
+.press-article {
+	padding: 1%;
 }
 
 /* footer */

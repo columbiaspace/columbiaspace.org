@@ -1,0 +1,73 @@
+<!-- Abstract starts here -->
+<div class="group-abstract">
+  <div class="container">
+    <h2>
+      {{ page.abstracttitle }}
+    </h2>
+    <h2><small>
+      {{ page.abstracttext }}
+    </small></h2>
+  </div>
+</div>
+<!-- Abstract ends here -->
+
+<!-- Featured articles start here -->
+
+<div class="press">
+
+  {% for aArticle in page.article %}
+  <div class="container press-article">
+    <div class="card">
+      <div class="col-md-4">
+        <img src="{{aArticle.image}}" class="img-thumbnail">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title"><a href="{{aArticle.link}}">{{ aArticle.title }}</a></h4>
+          <h6 class="card-subtitle mb-2 text-muted"><span>{{aArticle.publisher}}</span> | <span>{{aArticle.date}}</span> | By <span>{{aArticle.author}}</span></h6>
+          <p class="card-text">{{aArticle.excerpt}}....<a href="{{aArticle.link}}" class="card-link">Read More</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+<!-- Featured articles end here -->
+
+
+<!-- Calendar
+-->
+<div class="container">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <h1><a href="http://www.google.com/calendar/render?cid=https://calendar.google.com/calendar/ical/k1esjof3tmmr84i5um3812ni4s%40group.calendar.google.com/public/basic.ics" class="btn btn-primary btn-lg">Subscribe to our Calendar!</a></h1>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+</div>
+
+<div>
+  <table></table>
+</div>
+<!-- Content here -->
+
+<hr>
+
+<link rel='stylesheet' href='/assets/fullcalendar/fullcalendar.css' />
+<script src='/assets/fullcalendar/lib/moment.min.js'></script>
+<script src='/assets/fullcalendar/fullcalendar.js'></script>
+<script type='text/javascript' src='/assets/fullcalendar/gcal.js'></script>
+
+<div class="calendar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div id='calendar'></div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+  </div>
+</div>
