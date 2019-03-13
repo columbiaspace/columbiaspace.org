@@ -35,6 +35,8 @@
 </div>
 
 <!-- We can flush this out when we have more sponsors, I see having all 5 catagories templated -->
+
+<!--
 <div class="planetary">
 	<div class="container">
 		<div class="row">
@@ -57,19 +59,19 @@
 	</div>
 </div>
 
-<div class="asteroidal">
+<div class="impactor">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-12">
-				<h3>Asteroidal Level</h3>
+				<h3>Impactor Level</h3>
 			</div>
-			{% for aAsteroidalSponsor in page.asteroidal %}
+			{% for aImpactorSponsor in page.impactor %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
-				<a href="{{ aAsteroidalSponsor.link}}">
+				<a href="{{ aImpactorSponsor.link}}">
 					<div class="thumbnail">
-						<img src="{{ aAsteroidalSponsor.logo }}" alt="{{ aAsteroidalSponsor.name }}">
+						<img src="{{ aImpactorSponsor.logo }}" alt="{{ aImpactorSponsor.name }}">
 					</div>
 				</a>
 			</div>
@@ -78,15 +80,26 @@
 		</div>
 	</div>
 </div>
+-->
 
-<div>
+<div class="flyby">
 	<div class="container">
 		<div class="row">
-				<div class="col-md-12">
-					<p>
-						Sponsorship levels: Asteroidal ($50-$499), Planetary ($500-$1499), Solar ($1500-$4999), Galactic ($5000-$9999).
-					</p>
-				</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-12">
+				<h3>Fly-By Level <small>($20-$1999)</small></h3>
+			</div>
+			{% for aFlyBySponsor in page.flyby %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			<div class="col-sm-3">
+				<a href="{{ aFlyBySponsor.link}}">
+					<div class="thumbnail">
+						<img src="{{ aFlyBySponsor.logo }}" alt="{{ aFlyBySponsor.name }}">
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+			<div class="col-md-1"></div>
 		</div>
 	</div>
 </div>
