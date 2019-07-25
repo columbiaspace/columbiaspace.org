@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Zero-G End of First Year Update"
+title:  "End of First Year Update"
 date:   2019-5-10
 categories: zero-g
 ---
