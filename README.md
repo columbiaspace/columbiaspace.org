@@ -3,7 +3,7 @@
 ## How to use GitHub
 
 1. Make an account on GitHub.
-2. Download the desktop client at desktop.github.com
+2. Download the desktop client at [desktop.github.com](https://desktop.github.com)
 3. Clone our CSI repo at https://github.com/columbiaspace/columbiaspace.github.io
 	1. This will download our files to your computer.
 	2. You can make changes to these files, and then those changes will show up on the GitHub desktop client.
@@ -18,6 +18,35 @@ The website was initially designed with bootstrap, and later templated through j
 The mission pages of the website are completely templated to allow for non-developers to update the website. Most elements are scalable to require the least amount of maintenance as possible.
 
 The calendar implements the FullCalendar plugin, and the email signup is powered by mailchimp.
+
+## Getting started
+
+1. Make sure you have cloned the repo (see **How to use GitHub** above). Navigate to the local repo in terminal.
+
+2. [Download and install Ruby](https://www.ruby-lang.org/en/downloads/).
+
+3. Confirm Ruby has been successfully installed by typing the following in terminal:
+
+		ruby --version
+
+4. Install [RubyGems](https://rubygems.org/), the Ruby package manager. Depending on how you installed Ruby, you might already have this installed. You can check if it has been installed by typing the following in terminal:
+
+		gem --version
+
+5. Make sure you are in the repo directory in terminal before doing the following. Install Jekyll by typing the following in terminal:
+
+		gem install bundler jekyll
+
+6. Install the necessary packages by typing the following in terminal:
+
+		bundle install
+
+7. You're all done! You can now use jekyll to open the website on a local server. Type
+
+
+		bundle exec jekyll serve
+
+	in terminal and browse to `http://localhost:4000`. When the server boots up, you should see the columbiaspace.org website. Any changes you make to the source files will be automatically updated on this server.
 
 ## How to make posts!
 
@@ -50,10 +79,12 @@ Text goes here.
 
 ## Contributors
 
-[@jakehlee](https://github.com/jakehlee) - Website design, content, Jekyll implementation
+Gregory Schare ([@gschare](https://github.com/gschare)) - Webmaster
 
-[@leee](https://github.com/leee) - Jekyll migration/implementation
+Jake Lee ([@jakehlee](https://github.com/jakehlee)) - Website design, content, Jekyll implementation
 
-[@pr](https://github.com/pr) - Website design, content, Jekyll implementation
+Emma Lee ([@leee](https://github.com/leee)) - Jekyll migration/implementation
 
-[@tigerlily-he](https://github.com/tigerlily-he) - content
+Peter Richards ([@pr](https://github.com/pr)) - Website design, content, Jekyll implementation
+
+Lily He ([@tigerlily-he](https://github.com/tigerlily-he)) - content
