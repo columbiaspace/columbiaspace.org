@@ -2,6 +2,7 @@ _site
 .sass-cache
 Gemfile.lock
 *~
+.jekyll-cache
 
 # KDE directory preferences
 .directory
