@@ -143,6 +143,7 @@
 {% assign rolelist = page.leaderrole | split: ';' %}
 {% assign schoollist = page.leaderschool | split: ';' %}
 {% assign majorlist = page.leadermajor | split: ';' %}
+{% assign emaillist = page.leaderemail | split: ';' %}
 {% assign profimglist = page.leaderimage | split: ';' %}
 
 {% for aleader in leaderslist %}
@@ -169,6 +170,7 @@
 					<h3><small>{{ rolelist[forloop.index0] }}</small></h3>
 					<h3><small>{{ schoollist[forloop.index0] }}</small></h3>
 					<h3><small>{{ majorlist[forloop.index0] }}</small></h3>
+					<h3><small><a href="mailto:{{ emaillist[forloop.index0] }}">{{ emaillist[forloop.index0] }}</a></small></h3>
 				</div>
 				<div class="col-md-1"></div>
 			</div>
