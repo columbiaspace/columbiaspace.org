@@ -4,6 +4,7 @@ rvm:
 - 2.6.3
 
 script:
+  - bundle install
   - bundle exec rubocop
   - bundle exec jekyll build
 #  - bundle exec htmlproofer ./_site --check-favicon --check-html
