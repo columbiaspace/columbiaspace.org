@@ -46,7 +46,11 @@
 			{% for aFaculty in page.faculty %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
+				{% if aFaculty.image == "" %}
+				<img src= "/assets/media/img/csi-logo.png" alt="#" class="img-thumbnail">
+				{% else %}
 				<img src= "{{ aFaculty.image }}" alt="#" class="img-thumbnail">
+				{% endif %}
 				<h1>{{ aFaculty.name }}</h1>
 				<h1><small>{{ aFaculty.title }}</small></h1>
 			</div>
@@ -68,7 +72,11 @@
 			{% for aMember in page.members %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
+				{% if aMember.image == "" %}
+				<img src= "/assets/media/img/csi-logo.png" alt="#" class="img-thumbnail">
+				{% else %}
 				<img src= "{{ aMember.image }}" alt="#" class="img-thumbnail">
+				{% endif %}
 				<h1>{{ aMember.name }}</h1>
 				<h1><small>{{ aMember.title }}</small></h1>
 			</div>
