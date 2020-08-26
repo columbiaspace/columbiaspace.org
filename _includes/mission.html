@@ -162,7 +162,11 @@
 				</div>
 				<div class="col-sm-2">
 					<div class="thumbnail">
+						{% if profimglist[forloop.index0] == "" %}
+						<img src="/assets/media/img/profiles/default.png" alt="#">
+						{% else %}
 						<img src="{{ profimglist[forloop.index0] }}" alt="#">
+						{% endif %}
 					</div>
 				</div>
 				<div class="col-md-5">
