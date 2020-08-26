@@ -47,7 +47,7 @@
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
 				{% if aFaculty.image == "" %}
-				<img src= "/assets/media/img/csi-logo.png" alt="#" class="img-thumbnail">
+				<img src= "/assets/media/img/profiles/default.png" alt="#" class="img-thumbnail">
 				{% else %}
 				<img src= "{{ aFaculty.image }}" alt="#" class="img-thumbnail">
 				{% endif %}
@@ -73,7 +73,7 @@
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
 				{% if aMember.image == "" %}
-				<img src= "/assets/media/img/csi-logo.png" alt="#" class="img-thumbnail">
+				<img src= "/assets/media/img/profiles/default.png" alt="#" class="img-thumbnail">
 				{% else %}
 				<img src= "{{ aMember.image }}" alt="#" class="img-thumbnail">
 				{% endif %}
