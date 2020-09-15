@@ -23,7 +23,7 @@ The calendar implements the FullCalendar plugin, and the email signup is powered
 
 1. Make sure you have cloned the repo (see **How to use GitHub** above). Navigate to the local repo in terminal.
 
-2. [Download and install Ruby](https://www.ruby-lang.org/en/downloads/).
+2. [Download and install Ruby](https://www.ruby-lang.org/en/downloads/). I recommend using [rbenv](https://github.com/rbenv/rbenv), because it makes everything else easier.
 
 3. Confirm Ruby has been successfully installed by typing the following in terminal:
 
