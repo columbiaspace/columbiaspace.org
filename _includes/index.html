@@ -33,24 +33,10 @@
       </h2>
   </div>
 
-    <div class="row">
-    {% assign missionpages = site.pages | where: "group", "mission" %}
-    {% for node in missionpages %}
-
-    <!-- Number of columns in a row for various displays -->
-    {% assign md = forloop.index | modulo: 4 %}
-    {% assign sm = forloop.index | modulo: 3 %}
-    {% assign xs = forloop.index | modulo: 2 %}
-
-    <!--
-    index: {{forloop.index}}
-    md: {{md}}
-    sm: {{sm}}
-    xs: {{xs}}
-    -->
-
-     <div class="col-md-3 col-sm-6 col-12 mission-preview">
-      <div class="card">
+  <div class="row">
+    {% for node in site.pages %} {% if node.group == "mission" %}
+     <div class="col-md-4 col-sm-6 col-12 mission-preview">
+      <div class="card h-100">
         <a href="{{node.url}}">
           <div class="mission-card">
             <img class="img img-responsive full-width" src="{{node.jumboimage}}" alt="Mission image">
@@ -64,12 +50,8 @@
         </a>
        </div>
       </div>
-    
-    {% if md == 0 %} <div class="clearfix visible-md-up"></div> {% endif %}
-    {% if sm == 0 %} <div class="clearfix visible-sm"></div> {% endif %}
-    {% if xs == 0 %} <div class="clearfix visible-xs"></div> {% endif %}
-
+    {% endif %} 
     {% endfor %}
-    </div>
+  </div>
 
 </div>
