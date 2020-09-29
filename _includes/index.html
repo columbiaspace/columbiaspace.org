@@ -33,13 +33,11 @@
       </h2>
   </div>
 
-
   <div class="row">
-
     {% for node in site.pages %} {% if node.group == "mission" %}
-    <a href="{{node.url}}">
-      <div class="col-md-4 col-sm-6 mission-preview">
-        <div class="card">
+     <div class="col-md-4 col-sm-6 col-12 mission-preview">
+      <div class="card h-100">
+        <a href="{{node.url}}">
           <div class="mission-card">
             <img class="img img-responsive full-width" src="{{node.jumboimage}}" alt="Mission image">
           </div>
@@ -49,11 +47,11 @@
             <h5 class="card-subtitle">{{node.abstracttitle}}</h5>
             <p class="card-text">{{node.abstracttext}}</p>
           </div>
-
-        </div>
+        </a>
+       </div>
       </div>
-    </a>
-    {% endif %} {% endfor %}
-
+    {% endif %} 
+    {% endfor %}
   </div>
+
 </div>
