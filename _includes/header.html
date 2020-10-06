@@ -36,7 +36,12 @@
 						<ul class="dropdown-menu">
 							{% for node in site.pages %}
 								{% if page.url == node.url and node.group == "mission" %}
-									<li class="active"><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+                                    {% if node.url == "/missions/mission-nasa-src/" %}
+                                        <li class="active"><a href="{{node.url}}">Space Robotics</a></li>
+                                        <!-- Their jumbo title was too long and it was annoying me -->
+                                    {% else %}
+                                        <li class="active"><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
+                                    {% endif %}
 								{% elsif node.group == "mission" %}
 									<li><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
 								{% endif %}
