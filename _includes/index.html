@@ -34,7 +34,10 @@
   </div>
 
   <div class="row">
-    {% for node in site.pages %} {% if node.group == "mission" %}
+    {% assign missions = site.pages | where: "group", "mission" %}
+    {% for node in missions %}
+    {% assign tablet = forloop.index | modulo: 2 %}
+    {% assign computer = forloop.index | modulo: 3 %}
      <div class="col-md-4 col-sm-6 col-12 mission-preview">
       <div class="card h-100">
         <a href="{{node.url}}">
@@ -50,7 +53,15 @@
         </a>
        </div>
       </div>
-    {% endif %} 
+    {% if forloop.first == false %}
+        {% if tablet == 0 %}
+         <div class="clearfix visible-sm-block"></div>
+        {% endif %}
+        {% if computer == 0 %}
+         <div class="clearfix visible-md-block"></div>
+         <div class="clearfix visible-lg-block"></div>
+        {% endif %}
+    {% endif %}
     {% endfor %}
   </div>
 
