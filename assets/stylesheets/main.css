@@ -172,23 +172,23 @@ body a{
 }
 .mission-card {
 	position:relative;
-  overflow:hidden;
-  padding-bottom:100%;
+    overflow:hidden;
+    padding-bottom:100%;
 }
 
 .mission-card img {
-	position:absolute;
+	position: absolute;
 	border-radius: 2px;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
-
 /*signup*/
-
 .sign-up {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: rgba(185, 220, 251, 1);
 }
-
 .social .container {
 	padding-top:20px;
 	padding-bottom:20px;
