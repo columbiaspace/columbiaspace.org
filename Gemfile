@@ -7,3 +7,5 @@ gem 'jekyll'
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
 gem 'rubocop'
+
+gem "webrick", "~> 1.7"
