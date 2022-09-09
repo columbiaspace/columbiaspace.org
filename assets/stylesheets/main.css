@@ -87,7 +87,12 @@ body a{
 	height: 100%;
 	background-size: cover;
 	background-position: center;
+}
 
+.jumbotronMem {
+	height: 50%;
+	background-size: cover;
+	background-position: center;
 }
 
 .indexjumbo {
