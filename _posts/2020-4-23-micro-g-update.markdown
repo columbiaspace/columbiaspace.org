@@ -14,7 +14,7 @@ After two months of work on our design, we created the Handheld Assistive Remova
 	<img src="/assets/media/img/microg/2020-04-23-1.png">
 	<div>
     <figcaption class="text-center">
-      Our initial design of HARDCORE
+      <b>Our initial design of HARDCORE</b>
     </figcaption>
   </div>
 </p>
@@ -25,7 +25,7 @@ Since submitting our proposal and hearing of our finalist status in the competit
 	<img src="/assets/media/img/microg/2020-04-23-2.jpg">
 	<div>
     <figcaption class="text-center">
-      (Left to Right) Erika Storvick, Swati Ravi, and Matthew Groll with the the team’s underwater diving drill
+      <b>(Left to Right) Erika Storvick, Swati Ravi, and Matthew Groll with the the team’s underwater diving drill</b>
     </figcaption>
   </div>
 </p>
@@ -34,7 +34,7 @@ Since submitting our proposal and hearing of our finalist status in the competit
 	<img src="/assets/media/img/microg/2020-04-23-3.jpg">
 	<div>
     <figcaption class="text-center">
-      Erika Storvick (left) and Kalpana Ganeshan manufacturing HARDCORE in Columbia’s Mechanical Engineering Shop
+      <b>Erika Storvick (left) and Kalpana Ganeshan manufacturing HARDCORE in Columbia’s Mechanical Engineering Shop</b>
     </figcaption>
   </div>
 </p>
@@ -43,7 +43,7 @@ Since submitting our proposal and hearing of our finalist status in the competit
 	<img src="/assets/media/img/microg/2020-04-23-4.jpg">
 	<div>
     <figcaption class="text-center">
-      Matthew Groll (left) and Elizabeth Baranes testing the coring bit with a block of ice
+      <b>Matthew Groll (left) and Elizabeth Baranes testing the coring bit with a block of ice</b>
     </figcaption>
   </div>
 </p>

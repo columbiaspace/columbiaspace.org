@@ -8,7 +8,7 @@ categories: microg
 	<img src="/assets/media/img/microg/2019-06-17-0.jpg">
   <div>
     <figcaption class="text-center">
-      Micro-g Travel Team (left to right): Matthew Groll, Elle Stein, Swati Ravi, Sophia Kolak, Kal Ganeshan, and Natasha Dada
+      <b>Micro-g Travel Team (left to right): Matthew Groll, Elle Stein, Swati Ravi, Sophia Kolak, Kal Ganeshan, and Natasha Dada</b>
     </figcaption>
   </div>
 </p>
@@ -22,7 +22,7 @@ Our device, SHIRLEE (Sharp-Edge Handheld Identifier & Remover in Low-Gravity Ext
   <img src="/assets/media/img/microg/2019-06-17-2.png">
   <div>
     <figcaption class="text-center">
-      The final device, SHIRLEE
+      <b>The final device, SHIRLEE</b>
     </figcaption>
   </div>
 </p>
@@ -38,7 +38,7 @@ Our test took place the next morning. First, we had a poolside check-in with our
   <img src="/assets/media/img/microg/2019-06-17-4.png">
   <div>
     <figcaption class="text-center">
-      A poolside meeting with the divers before the dive (left) and the Control Room, where the team watched the dive (right)
+      <b>A poolside meeting with the divers before the dive (left) and the Control Room, where the team watched the dive (right) </b>
     </figcaption>
   </div>
 </p>
@@ -48,7 +48,7 @@ Our test took place the next morning. First, we had a poolside check-in with our
   <img src="/assets/media/img/microg/2019-06-17-6.png">
   <div>
     <figcaption class="text-center">
-       Swati giving directions to Diver Emily (left) as Emily uses SHIRLEE to remove a sharp edge from a handrail (right)
+       <b>Swati giving directions to Diver Emily (left) as Emily uses SHIRLEE to remove a sharp edge from a handrail (right)</b>
     </figcaption>
   </div>
 </p>
