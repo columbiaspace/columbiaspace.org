@@ -164,7 +164,8 @@ body a{
 	font-style: italic;
 }
 .index-header {
-	padding: 5%
+	padding: 5%;
+	margin-bottom: 50px;
 }
 /* podcast: This is Rocket Science*/
 #spotify-embed {
@@ -173,20 +174,66 @@ body a{
 }
 
 .mission-preview {
+	/*
 	border-left: 4px solid rgb(71, 77, 164);
+	*/
+	margin-top: 40px;
 }
 .mission-card {
 	position:relative;
     overflow:hidden;
     padding-bottom:100%;
+	border-radius: 25px;
 }
 
 .mission-card img {
 	position: absolute;
-	border-radius: 2px;
+	border-radius: 25px;
     height: 100%;
     overflow: hidden;
     object-fit: cover;
+	-webkit-filter: brightness(80%);
+}
+
+/*Darkens Image on Hover*/
+.mission-card img:hover {
+	filter: brightness(40%);
+	transition: all 1s ease;
+}
+
+.mission-card .card-desc {
+    opacity: 0;
+    transition-duration: .4s;
+}
+.mission-card:hover .card-label {
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+.mission-card:hover .card-desc {
+    opacity: 1;
+    transition-duration: .4s;
+}
+
+/* Center card title */
+.centered {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: large;
+	font-weight: bold;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+.card-label {
+	position: absolute;
+	top: 4%;
+	left: 9%;
+	color: white;
+	font-size: x-large;
+	font-weight: bold;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*signup*/
 .sign-up {
@@ -238,6 +285,12 @@ body a{
 /* calendar sizes */
 .calendar{
 	text-align: center;
+}
+.calendar-sub {
+	margin-top: 60px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	background-color: rgba(185, 220, 251, 1);
 }
 
 #desktop-cal {

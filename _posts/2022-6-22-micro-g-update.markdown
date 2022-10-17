@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Micro-g Update 2022"
-date:   2020-6-22
+date:   2022-6-22
 categories: microg
 ---
 CSI’s 2022 Micro-g tool, LionLatch, was designed as a gripping and anchoring mechanism for use on the lunar surface during NASA’s upcoming Artemis missions. This year’s challenge asked teams to design and manufacture an anchoring mechanism able to provide holding force on a variety of objects with different types of faces. The mechanism was required to work in the dusty, microgravity environment of the lunar surface, and had to be purely mechanical, not utilizing any sort of electronic aid or chemical adhesion.

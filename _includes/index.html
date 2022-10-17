@@ -26,13 +26,14 @@
   </div>
 </div>
 
-<div class="container row-color">
-  <div class="row group-abstract index-header">
-    <h2 class="text-center">
-        Join a Mission
-      </h2>
-  </div>
 
+<div class="sign-up group-abstract index-header">
+  <h2 class="text-center">
+      Join a Mission!
+    </h2>
+</div>
+
+<div class="container row-color">
   <div class="row">
     {% assign missions = site.pages | where: "group", "mission" %}
     {% for node in missions %}
@@ -43,12 +44,8 @@
         <a href="{{node.url}}">
           <div class="mission-card">
             <img class="img img-responsive full-width" src="{{node.jumboimage}}" alt="Mission image">
-          </div>
-
-          <div class="card-body">
-            <h3 class="card-title">{{node.jumbotitle}}</h3>
-            <h5 class="card-subtitle">{{node.abstracttitle}}</h5>
-            <p class="card-text">{{node.abstracttext}}</p>
+            <span class="card-label">{{node.jumbotitle}}</span>
+            <span class="card-desc centered">{{node.abstracttitle}}</span>
           </div>
         </a>
        </div>
@@ -64,5 +61,4 @@
     {% endif %}
     {% endfor %}
   </div>
-
 </div>
