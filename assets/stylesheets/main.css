@@ -190,6 +190,7 @@ body a{
     overflow: hidden;
     object-fit: cover;
 	-webkit-filter: brightness(80%);
+	filter:brightness(80%)
 }
 
 /*Darkens Image on Hover*/
