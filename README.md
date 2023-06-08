@@ -88,3 +88,5 @@ Emma Lee ([@leee](https://github.com/leee)) - Jekyll migration/implementation
 Peter Richards ([@pr](https://github.com/pr)) - Website design, content, Jekyll implementation
 
 Lily He ([@tigerlily-he](https://github.com/tigerlily-he)) - content
+
+Theodore Nelson ([@Theo-Nelson](https://github.com/Theo-Nelson)) - content
