@@ -48,6 +48,10 @@ The calendar implements the FullCalendar plugin, and the email signup is powered
 
 	in terminal and browse to `http://localhost:4000`. When the server boots up, you should see the columbiaspace.org website. Any changes you make to the source files will be automatically updated on this server.
 
+## Troubleshooting Tips
+
+*menu order is determined by the HTML file names within the corresponding folder
+
 ## How to make posts!
 
 1. Log in to your GitHub account.
