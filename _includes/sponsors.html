@@ -22,7 +22,7 @@
 			</div>
 			{% for aGrantsSponsor in page.grants %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				<a href="{{ aGrantsSponsor.link }}">
 					<div class="thumbnail">
 					<img src="{{ aGrantsSponsor.logo }}" alt="{{ aGrantsSponsor.name }}" />
