@@ -22,7 +22,7 @@
 							Members <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							{% for node in site.pages %}
+							{% for node in site.pages reversed %}
 								{% if node.group == "members" %}
 									<li><a href="{{node.url}}">{{node.abstracttitle}}</a></li>
 								{% endif %}
