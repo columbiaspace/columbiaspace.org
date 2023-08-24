@@ -94,3 +94,5 @@ Peter Richards ([@pr](https://github.com/pr)) - Website design, content, Jekyll 
 Lily He ([@tigerlily-he](https://github.com/tigerlily-he)) - content
 
 Theodore Nelson ([@Theo-Nelson](https://github.com/Theo-Nelson)) - content
+
+Jacob Boxerman ([@jakebox](https://github.com/jakebox)) - Webmaster 2023-24
