@@ -61,14 +61,16 @@
 							{% endfor %}
 						</ul>
 					</li>
-					<li {% if current[1] == 'sponsors' %} class='active' {% endif %} >
-											<a href="/sponsors/">Sponsors</a></li>
+					<!-- <li {% if current[1] == 'sponsors' %} class='active' {% endif %} >
+						 <a href="/sponsors/">Sponsors</a></li> -->
 					<li {% if current[1] == 'news' %} class='active' {% endif %} >
-						<a href="/news">News</a></li>
+						<a href="/news">CSI Updates</a></li>
 					<li {% if current[1] == 'press' %} class='active' {% endif %} >
-						<a href="/press">Press</a></li>
+						<a href="/press">In The News</a></li>
 					<li {% if current[1] == 'contact' %} class='active' {% endif %} >
 						<a href="/contact">Contact</a></li>
+					<li {% if current[1] == 'join' %} class='active' {% endif %} >
+						<a href="/join-us" class="btn-info">Join Us</a></li>
 				</ul>
 		</div>
 	</div>
@@ -103,7 +105,7 @@
 							Missions <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							{% for node in site.pages %}
+							{% for node in site.pages reversed %}
 								{% if page.url == node.url and node.group == "mission" %}
 									<li class="active"><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
 								{% elsif node.group == "mission" %}
@@ -112,14 +114,16 @@
 							{% endfor %}
 						</ul>
 					</li>
-					<li {% if current[1] == 'sponsors' %} class='active' {% endif %} >
-						<a href="/sponsors/2018/">Sponsors</a></li>
+					<!-- <li {% if current[1] == 'sponsors' %} class='active' {% endif %} >
+						 <a href="/sponsors/2018/">Sponsors</a></li> -->
 					<li {% if current[1] == 'news' %} class='active' {% endif %} >
-						<a href="/news">News</a></li>
+						<a href="/news">CSI Updates</a></li>
 					<li {% if current[1] == 'press' %} class='active' {% endif %} >
-						<a href="/press">Press</a></li>
+						<a href="/press">In The News</a></li>
 					<li {% if current[1] == 'contact' %} class='active' {% endif %} >
 						<a href="/contact">Contact</a></li>
+					<li {% if current[1] == 'join' %} class='list-group-item-action active' {% endif %} >
+						<a href="/join-us">Join Us</a></li>
 				</ul>
 			</div>
 		</div>
