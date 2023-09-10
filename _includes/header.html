@@ -93,7 +93,7 @@
 							Members <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							{% for node in site.pages %}
+							{% for node in site.pages reversed %}
 								{% if node.group == "members" %}
 									<li><a href="{{node.url}}">{{node.abstracttitle}}</a></li>
 								{% endif %}
@@ -105,7 +105,7 @@
 							Missions <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							{% for node in site.pages reversed %}
+							{% for node in site.pages %}
 								{% if page.url == node.url and node.group == "mission" %}
 									<li class="active"><a href="{{node.url}}">{{node.jumbotitle}}</a></li>
 								{% elsif node.group == "mission" %}
