@@ -1,5 +1,23 @@
 {% assign current = page.url | downcase | split: '/' %}
 
+<style>
+ .blink {
+  animation:blink 2s linear infinite;
+}
+
+@keyframes blink {
+  80% {
+    color:black;
+  }
+  90% {
+    color:red;
+  }
+  100% {
+    color:black;
+  }
+}
+</style>
+
 <header class="site-header">
 	<!-- Separate navbars for mobile and desktop, because I like bootstrap nav for desktop
 	and navbar for mobile collapsed. CSS controls which one. -->
@@ -8,6 +26,9 @@
 	<!-- Desktop nav bar here -->
 	<div class="navbar navbar-fixed-top" role="navigation" id="nav-desktop">
 		<div class="container-fluid">
+		<div class="alert alert-danger text-center">
+			<blink><h3 class="blink">Sign-up <a href="https://forms.gle/8ZYjtsbnn6biqsz59">here</a> for Astronaut Woody Hoburg's visit on Friday, Nov 2!</h3></blink>
+		</div>
 				<ul class="nav nav-justified nav-pills">
 				<!--
 					<li {% if current[1] == null %} class="aboutNav" {% endif %} >
