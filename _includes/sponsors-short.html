@@ -1,0 +1,54 @@
+<div class="group-abstract">
+  <div class="container">
+    <h3><small> Thank you to our sponsors </small></h3>
+    <p>
+      We are grateful for the support we recieve. To learn about how you can help us, visit our
+      <a href="/support-us">Support Us</a> page.
+    </p>
+  </div>
+</div>
+
+<div class="group-abstract">
+  <div class="container about-center">
+    <div>
+      <div class="grants">
+        <div class="container">
+          <div class="row">
+            <!-- <div class="col-md-12">
+              <h4>Internal</h4>
+            </div> -->
+            {% for sponsor in site.data.sponsors.internal %} {% assign loopindex = forloop.index | modulo: 4 %}
+            <div class="col-md-4">
+              <a href="{{ sponsor.link }}"> {{sponsor.name}} </a>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="row">
+            <!-- <div class="col-md-12">
+              <h4>Non-Profit</h4>
+            </div> -->
+            <hr />
+            {% for sponsor in site.data.sponsors.nonprofit %} {% assign loopindex = forloop.index | modulo: 4 %}
+            <div class="col-md-4">
+              <a href="{{ sponsor.link }}"> {{sponsor.name}} </a>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="row">
+            <!-- <div class="col-md-12">
+              <h4>Corporate</h4>
+            </div> -->
+            <hr />
+            {% for sponsor in site.data.sponsors.corporate %} {% assign loopindex = forloop.index | modulo: 4 %}
+            <div class="col-md-4">
+              <a href="{{ sponsor.link }}"> {{sponsor.name}} </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
