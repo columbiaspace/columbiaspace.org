@@ -28,10 +28,10 @@ $(document).ready(function() {
 		event.preventDefault();
 		console.log("triggered");
 		if(isDrake){
-			$('html,body').removeClass('cursor');
+			$('html').removeClass('cursor');
 			isDrake = false;
 		}else{
-			$('html,body').addClass('cursor');
+			$('html').addClass('cursor');
 			isDrake = true;
 		}
 		

@@ -1,16 +1,17 @@
 <!-- Jumbotron here -->
-<div class="jumbotron" style= "background-image: url({{ page.jumboimage }});">
-	{% if page.logoflag != false %}
-	<div class="hack-padding">
-	</div>
-	{% endif %}
-	<div class="container">
-		{% if page.logoflag != false %}
-    	<img src="/assets/media/img/csi-logo-small.png" id="jumbologo">
-    	{% endif %}
-    	<h1>{{page.jumbotitle}}</h1>
-	</div>
-	<div class="credit">
-    	<p>{{page.imagecredit}}</p>
-	</div>
+<div class="jumbotron" style="background-image: url({{ page.jumboimage }});">
+  {% if page.logoflag != false %}
+  <div class="hack-padding"></div>
+  {% endif %}
+  <div class="container">
+    {% if page.logoflag != false %} {% if page.missionpatch %}
+    <img src={{page.missionpatch}} id="jumbologo" />
+    {% else %}
+    <img src="/assets/media/img/csi-logo-small.png" id="jumbologo" />
+    {% endif %} {% endif %}
+    <h1>{{page.jumbotitle}}</h1>
+  </div>
+  <div class="credit">
+    <p>{{page.imagecredit}}</p>
+  </div>
 </div>

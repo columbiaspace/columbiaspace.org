@@ -1,120 +1,117 @@
-
 <!-- Group abstract here -->
 <div class="group-abstract">
-	<div class="container">
-	<h2>{{ page.abstracttitle }}</h2>
-	<h2><small>
-		 {{ page.abstracttext }}
-	</small></h2>
-	</div>
+  <div class="container">
+    <h2>{{ page.abstracttitle }}</h2>
+    <h2><small> {{ page.abstracttext }} </small></h2>
+  </div>
 </div>
 
 {% if page.success != ~ %}
-	<div class="topmessage">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="alert alert-success" role="alert">
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{ page.success }}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="topmessage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert alert-success" role="alert">
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{ page.success }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %} {% if page.alert != ~ %}
+<div class="topmessage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert alert-warning" role="alert">
+          <span class="glyphicon glyphicon-alert"> </span> {{ page.alert }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endif %}
 
-{% if page.alert != ~ %}
-	<div class="topmessage">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="alert alert-warning" role="alert">
-						<span class="glyphicon glyphicon-alert"> </span> {{ page.alert }}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-{% endif %}
-
-<hr>
+<hr />
 <!-- faculty members here -->
 
 <div class="faculty">
-	<div class="container">
-		<div class="row">
-			{% for aFaculty in page.faculty %}
-			{% assign loopindex = forloop.index | modulo: 4 %}
-			<div class="col-sm-3">
-				{% if aFaculty.image == "" %}
-				<img src= "/assets/media/img/profiles/default.png" alt="#" class="img-thumbnail">
-				{% else %}
-				<img src= "{{ aFaculty.image }}" alt="#" class="img-thumbnail">
-				{% endif %}
-				<h1>{{ aFaculty.name }}</h1>
-				<h1><small>{{ aFaculty.title }}</small></h1>
-			</div>
-			{% if loopindex == 0 %}
-				</div>
-				<div class="row">
-			{% endif %}
-			{% endfor %}
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      {% for aFaculty in page.faculty %} {% assign loopindex = forloop.index | modulo: 4 %}
+      <div class="col-sm-3">
+        {% if aFaculty.image == "" %}
+        <img src="/assets/media/img/profiles/default.png" alt="#" class="img-thumbnail" />
+        {% else %}
+        <img src="{{ aFaculty.image }}" alt="#" class="img-thumbnail" />
+        {% endif %}
+        <h1>{{ aFaculty.name }}</h1>
+        <h1><small>{{ aFaculty.title }}</small></h1>
+      </div>
+      {% if loopindex == 0 %}
+    </div>
+    <div class="row">{% endif %} {% endfor %}</div>
+  </div>
 </div>
 
-<hr>
+<hr />
 
 <!-- Board Members here -->
 <div class="members">
-	<div class="container">
-		<div class="row">
-			{% for aMember in page.members %}
-			{% assign loopindex = forloop.index | modulo: 4 %}
-			<div class="col-sm-3">
-				{% if aMember.image == "" %}
-				<img src= "/assets/media/img/profiles/default.png" alt="#" class="img-thumbnail">
-				{% else %}
-				<img src= "{{ aMember.image }}" alt="#" class="img-thumbnail">
-				{% endif %}
-				<h1>{{ aMember.name }}</h1>
-				<h1><small>{{ aMember.title }}</small></h1>
-			</div>
-			{% if loopindex == 0 %}
-				</div>
-				<hr>
-				<div class="row">
-			{% endif %}
-			{% endfor %}
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      {% for aMember in page.members %} {% assign loopindex = forloop.index | modulo: 4 %}
+      <div class="col-sm-3">
+        {% if aMember.image == "" %}
+        <img src="/assets/media/img/profiles/default.png" alt="#" class="img-thumbnail" />
+        {% else %}
+        <img src="{{ aMember.image }}" alt="#" class="img-thumbnail" />
+        {% endif %}
+        <h1>{{ aMember.name }}</h1>
+        <h1><small>{{ aMember.title }}</small></h1>
+      </div>
+      {% if loopindex == 0 %}
+    </div>
+    <hr />
+    <div class="row">{% endif %} {% endfor %}</div>
+  </div>
 </div>
 
-<hr>
+<hr />
 
+{% if page.genbody %}
 <div class="genbody">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3>General Body Members</h3>
-				<table class="table table-striped">
-				<thead><tr>
-					<th>Name</th>
-					<th>School/Year</th>
-					<th>Major</th>
-				</tr></thead>
-				{% for aGenMember in page.genbody %}
-				<tr>
-					<td>{{ aGenMember.name }}</td>
-					<td>{{ aGenMember.school }}</td>
-					<td>{{ aGenMember.major }}</td>
-				</tr>
-				{% endfor %}
-				</table>
-				<p><small>For changes, contact the <a href="https://github.com/columbiaspace/columbiaspace.org/issues"> webmaster</a> or any board member who can direct your request.</small></p>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>General Body Members</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>School/Year</th>
+              <th>Major</th>
+            </tr>
+          </thead>
+          {% for aGenMember in page.genbody %}
+          <tr>
+            <td>{{ aGenMember.name }}</td>
+            <td>{{ aGenMember.school }}</td>
+            <td>{{ aGenMember.major }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+        <p>
+          <small
+            >For changes, contact the
+            <a href="https://github.com/columbiaspace/columbiaspace.org/issues"> webmaster</a> or any board member who
+            can direct your request.</small
+          >
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
+{% endif %}
 
-<hr>
+<hr />

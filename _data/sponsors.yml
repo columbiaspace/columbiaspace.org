@@ -1,0 +1,32 @@
+internal:
+  - name: "Columbia Mechanical Engineering"
+    logo: "/assets/media/img/sponsors/mech_e_grant.png"
+    link: "http://me.columbia.edu/"
+  - name: "Columbia Engineering Dean's Office"
+    logo: "/assets/media/img/sponsors/engineering_office_of_the_dean_grant.png"
+    link: "http://engineering.columbia.edu/office-dean"
+  - name: "Columbia Engineering Outreach Office"
+    logo: "/assets/media/img/sponsors/engineering_office_of_the_dean_grant.png"
+    link: "http://engineering.columbia.edu/office-dean"
+
+corporate:
+  - name: "Futek"
+    logo: "/assets/media/img/sponsors/futek.png"
+    link: "https://www.futek.com/applications/Rocket-Engine-Thrust-Stand"
+  - name: "Ansys"
+    logo: ""
+    link: "https://www.ansys.com/"
+  - name: "Kulite"
+    logo: ""
+    link: "https://kulite.com/"
+  - name: "Integrate"
+    logo: ""
+    link: ""
+
+nonprofit:
+  - name: "Sophie Gerson Healthy Youth"
+    logo: "/assets/media/img/sponsors/sophie_gerson.png"
+    link: "http://www.sophiegersonhealthyyouth.org/"
+  - name: "New York Space Grant Consortium"
+    logo: "/assets/media/img/sponsors/nysg_grant.gif"
+    link: "https://www.nyspacegrant.org/"
