@@ -96,8 +96,8 @@ body a{
 }
 
 .indexjumbo {
-	-webkit-animation: jumbotron-fade 2s ease-in-out 0s 1;
-	animation: jumbotron-fade 2s ease-in-out 0s 1;
+	-webkit-animation: jumbotron-fade 1.25s ease-in-out 0s 1;
+	animation: jumbotron-fade 1.25s ease-in-out 0s 1;
 	background-image: url("/assets/media/img/index/img1-long-small.png");
 	background-color: #000000;
 	height: 100% !important;
