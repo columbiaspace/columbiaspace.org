@@ -1128,19 +1128,31 @@ img {
 .img-rounded {
   border-radius: 6px;
 }
-.img-thumbnail {
+
+
+.img-thumbnail, .img-thumbnail-rect, .thumbnail  {
   display: inline-block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  object-fit: cover; 
   padding: 4px;
-  line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all .2s ease-in-out;
-       -o-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
+  margin-bottom: 20px; 
+  max-height:262.5px;
+  height: auto;
 }
+
+.img-thumbnail{
+  aspect-ratio: 1 / 1; 
+}
+
+.img-thumbnail-rect{
+  aspect-ratio: 1 / 0.7; 
+
+}
+
+
 .img-circle {
   border-radius: 50%;
 }
@@ -5044,18 +5056,16 @@ a.badge:focus {
     font-size: 63px;
   }
 }
+
 .thumbnail {
   display: block;
-  padding: 4px;
-  margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
+  /* transition needs to be fixed */
+  /* -webkit-transition: border-width .2s ease-in-out;
+   -o-transition: border-width .2s ease-in-out;
+      transition: border-width .2s ease-in-out; */
 }
+
 .thumbnail > img,
 .thumbnail a > img {
   margin-right: auto;

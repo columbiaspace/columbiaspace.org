@@ -476,12 +476,15 @@ mark,
 }
 
 .img-thumbnail {
-  padding: 0.25rem;
+  display: inline-block;
+  width: 262.5px;
+  height: 262.5px; 
+  object-fit: cover; 
+  padding: 4px;
   background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px; 
 }
 
 .figure {
