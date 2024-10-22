@@ -5,7 +5,7 @@
 	<h2>Supporting our Missions.</h2>
 		<p>{{ page.introtext }}</p>
 	<h2><small>
-	  If you are interested in sponsoring the team, please see our <a href="/assets/media/docs/CSI_sponsor_packet.pdf">sponsorship packet</a> and <a href="mailto:columbiaspaceinitiative@gmail.com">get in touch</a>!
+	  If you are interested in sponsoring the team, please see our <a href="/assets/media/docs/CSI Sponsorship Packet V2.pdf">sponsorship packet</a> and <a href="mailto:columbiaspaceinitiative@gmail.com">get in touch</a>!
     </small></h2>
 	</div>
 </div>
@@ -59,19 +59,19 @@
 </div>
  -->
 
-<div class="impactor">
+<div class="columbia">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-12">
-				<h3>Impactor Level <small>($2000-$9999)</small></h3>
+				<h3>Columbia Sponsorship</h3>
 			</div>
-			{% for aImpactorSponsor in page.impactor %}
+			{% for columbiagrant in page.columbia %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
-				<a href="{{ aImpactorSponsor.link}}">
+				<a href="{{ columbiagrant.link}}">
 					<div class="thumbnail">
-						<img src="{{ aImpactorSponsor.logo }}" alt="{{ aImpactorSponsor.name }}">
+						<img src="{{ columbiagrant.logo }}" alt="{{ columbiagrant.name }}">
 					</div>
 				</a>
 			</div>
@@ -82,19 +82,19 @@
 </div>
 
 
-<div class="flyby">
+<div class="companies">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-12">
-				<h3>Fly-By Level <small>($20-$1999)</small></h3>
+				<h3>Company Sponsorship</h3>
 			</div>
-			{% for aFlyBySponsor in page.flyby %}
+			{% for company in page.companies %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
-				<a href="{{ aFlyBySponsor.link}}">
+				<a href="{{ company.link}}">
 					<div class="thumbnail">
-						<img src="{{ aFlyBySponsor.logo }}" alt="{{ aFlyBySponsor.name }}">
+						<img src="{{ company.logo }}" alt="{{ company.name }}">
 					</div>
 				</a>
 			</div>
