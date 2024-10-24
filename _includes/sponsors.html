@@ -13,22 +13,66 @@
 
 <hr>
 
-<div class="grants">
+<div class="corporate-sponsors">
 	<div class="container">
 		<div class="row">
+			<div class="col-md-1"></div>
 			<div class="col-md-12">
-				<h3>Grants</h3>
+				<h3>Corporate Sponsors</h3>
 			</div>
-			{% for aGrantsSponsor in page.grants %}
+			{% for sponsor in page.corporate-sponsors %}
 			{% assign loopindex = forloop.index | modulo: 4 %}
 			<div class="col-sm-3">
-				<a href="{{ aGrantsSponsor.link }}">
+				<a href="{{ sponsor.link}}">
 					<div class="thumbnail">
-					<img src="{{ aGrantsSponsor.logo }}" alt="{{ aGrantsSponsor.name }}" />
+						<img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
 					</div>
 				</a>
 			</div>
 			{% endfor %}
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+</div>
+
+<div class="external-partners">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>External Partners</h3>
+			</div>
+			{% for sponsor in page.external-partners %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			<div class="col-sm-3">
+				<a href="{{ sponsor.link }}">
+					<div class="thumbnail">
+					<img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<div class="columbia-partners">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-12">
+				<h3> Columbia Partners</h3>
+			</div>
+			{% for sponsor in page.columbia-partners %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			<div class="col-sm-3">
+				<a href="{{ sponsor.link}}">
+					<div class="thumbnail">
+						<img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+			<div class="col-md-1"></div>
 		</div>
 	</div>
 </div>
@@ -59,49 +103,6 @@
 </div>
  -->
 
-<div class="columbia">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-12">
-				<h3>Columbia Sponsorship</h3>
-			</div>
-			{% for columbiagrant in page.columbia %}
-			{% assign loopindex = forloop.index | modulo: 4 %}
-			<div class="col-sm-3">
-				<a href="{{ columbiagrant.link}}">
-					<div class="thumbnail">
-						<img src="{{ columbiagrant.logo }}" alt="{{ columbiagrant.name }}">
-					</div>
-				</a>
-			</div>
-			{% endfor %}
-			<div class="col-md-1"></div>
-		</div>
-	</div>
-</div>
 
-
-<div class="companies">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-12">
-				<h3>Company Sponsorship</h3>
-			</div>
-			{% for company in page.companies %}
-			{% assign loopindex = forloop.index | modulo: 4 %}
-			<div class="col-sm-3">
-				<a href="{{ company.link}}">
-					<div class="thumbnail">
-						<img src="{{ company.logo }}" alt="{{ company.name }}">
-					</div>
-				</a>
-			</div>
-			{% endfor %}
-			<div class="col-md-1"></div>
-		</div>
-	</div>
-</div>
 
 <hr>
