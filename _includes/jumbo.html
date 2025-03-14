@@ -7,7 +7,9 @@
     {% if page.logoflag != false %} {% if page.missionpatch %}
     <img src={{page.missionpatch}} id="jumbologo" />
     {% else %}
+    {% if page.show_logo != false %}
     <img src="/assets/media/img/csi-logo-small.png" id="jumbologo" />
+    {% endif %}
     {% endif %} {% endif %}
     <h1>{{page.jumbotitle}}</h1>
   </div>
