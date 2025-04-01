@@ -87,7 +87,10 @@ body a{
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-}
+	background-repeat: no-repeat;
+	min-height: 300px;
+  }
+  
 
 .jumbotronMem {
 	height: 50%;
@@ -358,6 +361,31 @@ body a{
 	}
 
 }
+
+  /* jumbotron */
+  @media (max-width: 1200px) {
+	.jumbotron {
+	  height: 90%;
+	}
+  }
+  
+  @media (max-width: 992px) {
+	.jumbotron {
+	  height: 85%;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.jumbotron {
+	  height: 75%;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.jumbotron {
+	  height: 65%;
+	}
+  }
 
 /*font */
 @font-face {
