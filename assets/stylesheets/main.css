@@ -98,13 +98,34 @@ body a{
 	background-position: center;
 }
 
+
 .indexjumbo {
 	-webkit-animation: jumbotron-fade 1.25s ease-in-out 0s 1;
 	animation: jumbotron-fade 1.25s ease-in-out 0s 1;
-	background-image: url("/assets/media/img/index/img1-long-small.png");
+	background-image: url("/assets/media/img/jumbotron/support-us-collage.png");
 	background-color: #000000;
 	height: 100% !important;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 }
+
+.indexjumbo::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3); 
+	z-index: 0;
+}
+
+.indexjumbo .container {
+	position: relative;
+	z-index: 1; 
+}
+
 
 .jumbotron #jumbologo{
 	 width: 15%;
@@ -426,13 +447,13 @@ body a{
 
 @-webkit-keyframes jumbotron-fade {
     from {background-image: url("/assets/media/img/index/img1-long-dark-small.png");}
-    to {background-image: url("/assets/media/img/index/img1-long-small.png");}
+    to {background-image: url("/assets/media/img/jumbotron/support-us-collage.png");}
 }
 
 
 @keyframes jumbotron-fade {
     from {background-image: url("/assets/media/img/index/img1-long-dark-small.png");}
-    to {background-image: url("/assets/media/img/index/img1-long-small.png");}
+    to {background-image: url("/assets/media/img/jumbotron/support-us-collage.png");}
 }
 
 #confetti{
