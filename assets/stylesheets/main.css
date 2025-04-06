@@ -87,7 +87,10 @@ body a{
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-}
+	background-repeat: no-repeat;
+	min-height: 300px;
+  }
+  
 
 .jumbotronMem {
 	height: 50%;
@@ -95,13 +98,34 @@ body a{
 	background-position: center;
 }
 
+
 .indexjumbo {
 	-webkit-animation: jumbotron-fade 1.25s ease-in-out 0s 1;
 	animation: jumbotron-fade 1.25s ease-in-out 0s 1;
-	background-image: url("/assets/media/img/index/img1-long-small.png");
+	background-image: url("/assets/media/img/jumbotron/support-us-collage.png");
 	background-color: #000000;
 	height: 100% !important;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 }
+
+.indexjumbo::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3); 
+	z-index: 0;
+}
+
+.indexjumbo .container {
+	position: relative;
+	z-index: 1; 
+}
+
 
 .jumbotron #jumbologo{
 	 width: 15%;
@@ -359,6 +383,31 @@ body a{
 
 }
 
+  /* jumbotron */
+  @media (max-width: 1200px) {
+	.jumbotron {
+	  height: 90%;
+	}
+  }
+  
+  @media (max-width: 992px) {
+	.jumbotron {
+	  height: 85%;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.jumbotron {
+	  height: 75%;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.jumbotron {
+	  height: 65%;
+	}
+  }
+
 /*font */
 @font-face {
     font-family: futura;
@@ -398,13 +447,13 @@ body a{
 
 @-webkit-keyframes jumbotron-fade {
     from {background-image: url("/assets/media/img/index/img1-long-dark-small.png");}
-    to {background-image: url("/assets/media/img/index/img1-long-small.png");}
+    to {background-image: url("/assets/media/img/jumbotron/support-us-collage.png");}
 }
 
 
 @keyframes jumbotron-fade {
     from {background-image: url("/assets/media/img/index/img1-long-dark-small.png");}
-    to {background-image: url("/assets/media/img/index/img1-long-small.png");}
+    to {background-image: url("/assets/media/img/jumbotron/support-us-collage.png");}
 }
 
 #confetti{
