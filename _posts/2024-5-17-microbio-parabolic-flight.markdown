@@ -5,7 +5,7 @@ date:   2024-05-16
 categories: microbio
 ---
 
-The Space Microbiology mission spent the academic year learning about spaceflight and its effects on biological systems–namely, spaceflight-induced anemia and decreased bone density due to long-term exposure to microgravity.
+The Astrobiology mission spent the academic year learning about spaceflight and its effects on biological systems–namely, spaceflight-induced anemia and decreased bone density due to long-term exposure to microgravity.
 
 <p align="center">
 	<img src="/assets/media/img/microbio/2024-05-17-2.jpg">
