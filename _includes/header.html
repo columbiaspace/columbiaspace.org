@@ -81,7 +81,7 @@
 	
 					<li {% if current[1] == 'support-us' %} class='active' {% endif %}  class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="supportDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Sponsor
+							Sponsor <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="supportDropdown">
 							<li><a class="dropdown-item" href="/support-us/">Sponsor Us</a></li>
@@ -133,16 +133,22 @@
 							{% endfor %}
 						</ul>
 					</li>
-					<!-- <li {% if current[1] == 'sponsors' %} class='active' {% endif %} >
-						 <a href="/sponsors/2018/">Sponsors</a></li> -->
+			
 					<li {% if current[1] == 'news' %} class='active' {% endif %} >
 						<a href="/news">CSI Blog</a></li>
 					<li {% if current[1] == 'press' %} class='active' {% endif %} >
 						<a href="/press">In the News</a></li>
 					<li {% if current[1] == 'contact' %} class='active' {% endif %} >
 						<a href="/contact">Contact</a></li>
-					<li {% if current[1] == 'support-us' %} class='active' {% endif %} >
-						<a href="/support-us">Support Us</a></li>
+					<li {% if current[1] == 'support-us' %} class='active' {% endif %}  class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="supportDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Sponsor <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="supportDropdown">
+							<li><a class="dropdown-item" href="/support-us/">Sponsor Us</a></li>
+							<li><a class="dropdown-item" href="/sponsors">Current Sponsors</a></li>
+						</ul>
+					</li>
 					<li {% if current[1] == 'join' %} class='list-group-item-action active' {% endif %} >
 						<a href="/join-us">Join Us</a></li>
 				</ul>
