@@ -190,7 +190,8 @@
 
 	<!-- Content Management here in the future -->
 	<!-- News for now -->
-{% if page.news == true %}
+{% assign mission_posts = site.categories[page.news-cat] %}
+{% if page.news == true and mission_posts.size > 0 %}
 	<div class="mission-specific-news">
 		<div class="container">
 			<div class="row">
@@ -198,7 +199,7 @@
 				<div class="col-md-10">
 					<h3>Recent News</h3>
 					<!-- Begin news block -->
-						{% for post in site.categories[page.news-cat] %}
+						{% for post in mission_posts %}
 						<div class="panel panel-default">
 							<div class="panel-heading">
 							    <h3>{{ post.title }} <small>posted in {{ post.categories }} </small> </h3>
