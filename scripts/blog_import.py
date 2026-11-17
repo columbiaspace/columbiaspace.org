@@ -10,7 +10,7 @@
 """Import blog posts from the Google Form response sheet.
 
 Each row with an empty Status cell becomes a post in _posts/, with its photos
-resized into assets/media/img/posts/. See docs/blog-submissions.md.
+resized into the team's folder under assets/media/img/. See docs/blog-submissions.md.
 
     uv run scripts/blog_import.py --dry-run
 
@@ -45,12 +45,15 @@ except ImportError:  # HEIC support is optional
 
 REPO = Path(__file__).resolve().parent.parent
 POSTS_DIR = REPO / "_posts"
-IMG_ROOT = REPO / "assets" / "media" / "img" / "posts"
-IMG_URL_ROOT = "/assets/media/img/posts"
+IMG_ROOT = REPO / "assets" / "media" / "img"
+IMG_URL_ROOT = "/assets/media/img"
+PHOTO_NAME_LEN = 30
 
 MISSIONS_DIR = REPO / "missions"
 # Teams without a mission page
 EXTRA_TEAMS = {"Podcast": "podcast", "General club news": "news"}
+# Photo folders for teams without a mission page, when not named after the category
+EXTRA_IMG_FOLDERS = {"news": "posts"}
 
 
 def load_teams() -> dict[str, str]:
@@ -65,6 +68,18 @@ def load_teams() -> dict[str, str]:
             teams[title.group(1)] = cat.group(1)
     teams.update(EXTRA_TEAMS)
     return teams
+
+
+def image_folder(category: str) -> str:
+    """Folder under assets/media/img/ for a team's photos: the mission page's
+    img-folder if it sets one, otherwise the category name."""
+    for page in MISSIONS_DIR.glob("*.html"):
+        text = page.read_text()
+        if re.search(rf"^news-cat:\s*{re.escape(category)}\s*$", text, re.MULTILINE):
+            folder = re.search(r"^img-folder:\s*(\S+)", text, re.MULTILINE)
+            if folder:
+                return folder.group(1)
+    return EXTRA_IMG_FOLDERS.get(category, category)
 
 
 def resolve_category(team: str, teams: dict[str, str]) -> str:
@@ -112,7 +127,11 @@ class Submission:
 def slugify(text: str, max_len: int = 50) -> str:
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     text = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
-    return text[:max_len].rstrip("-") or "post"
+    if len(text) > max_len:
+        # Cut at a whole word when there is one to cut at
+        cut = text[: max_len + 1].rfind("-")
+        text = text[:cut] if cut > 0 else text[:max_len]
+    return text.rstrip("-") or "post"
 
 
 def parse_date(value: str) -> date | None:
@@ -217,9 +236,18 @@ def front_matter(title: str, d: date, category: str, author: str, submitted: str
 def unique_stem(d: date, slug: str) -> str:
     base = f"{jekyll_date(d)}-{slug}"
     stem, n = base, 2
-    while (POSTS_DIR / f"{stem}.markdown").exists() or (IMG_ROOT / stem).exists():
+    while (POSTS_DIR / f"{stem}.markdown").exists():
         stem, n = f"{base}-{n}", n + 1
     return stem
+
+
+def photo_prefix(d: date, title: str, folder: str) -> str:
+    """Name prefix for a post's photos, e.g. 2026-11-17-test-launch-recap, unique in its team's folder."""
+    base = f"{d.isoformat()}-{slugify(title, PHOTO_NAME_LEN)}"
+    prefix, n = base, 2
+    while any((IMG_ROOT / folder).glob(f"{prefix}-*.jpg")):
+        prefix, n = f"{base}-{n}", n + 1
+    return prefix
 
 
 def save_image(data: bytes, dest: Path) -> None:
@@ -342,13 +370,15 @@ def build_post(source, sub: Submission) -> tuple[str, list[Path]]:
         raise ValueError(f"can't parse date {sub.get(COL_TIMESTAMP)!r}")
 
     stem = unique_stem(d, slugify(title))
+    folder = image_folder(category)
+    prefix = photo_prefix(d, title, folder)
     written: list[Path] = []
     image_urls = []
     for n, ref in enumerate(sub.photos, start=1):
-        dest = IMG_ROOT / stem / f"{n}.jpg"
-        save_image(source.fetch_photo(ref), dest)
-        written.append(dest)
-        image_urls.append(f"{IMG_URL_ROOT}/{stem}/{n}.jpg")
+        name = f"{folder}/{prefix}-{n}.jpg"
+        save_image(source.fetch_photo(ref), IMG_ROOT / name)
+        written.append(IMG_ROOT / name)
+        image_urls.append(f"{IMG_URL_ROOT}/{name}")
 
     captions = [c.strip() for c in sub.get(COL_CAPTIONS).splitlines() if c.strip()]
     post = POSTS_DIR / f"{stem}.markdown"
@@ -368,7 +398,7 @@ def set_repo(path: Path) -> None:
     if not (REPO / "_config.yml").exists():
         raise SystemExit(f"{REPO} doesn't look like the site repo (no _config.yml).")
     POSTS_DIR = REPO / "_posts"
-    IMG_ROOT = REPO / "assets" / "media" / "img" / "posts"
+    IMG_ROOT = REPO / "assets" / "media" / "img"
     MISSIONS_DIR = REPO / "missions"
 
 

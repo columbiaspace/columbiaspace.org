@@ -23,7 +23,7 @@ Question titles must match exactly, since the script reads the sheet by column h
 | Spotify link | Short answer | Optional, for podcast posts |
 | Publish date | Date | Optional |
 
-Teams come from the mission pages' `jumbotitle`, plus Podcast and General club news. When a mission is added or retired, update the dropdown.
+Teams come from the mission pages' `jumbotitle`, plus Podcast and General club news. When a mission is added or retired, update the dropdown. Photos go in `assets/media/img/<news-cat>/`, or in the folder named by a mission page's `img-folder` field if it has one.
 
 ## Reviewing
 
