@@ -56,3 +56,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 admin/
+
+# Google credential files
+keys/
+*-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].json
+*service-account*.json
+*credentials*.json
+gha-creds-*.json
