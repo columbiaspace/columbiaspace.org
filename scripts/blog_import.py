@@ -13,10 +13,9 @@ Each row with an empty Status cell becomes a post in _posts/, with its photos
 resized into assets/media/img/posts/. See docs/blog-submissions.md.
 
     uv run scripts/blog_import.py --dry-run
-    uv run scripts/blog_import.py --fixture scripts/fixtures/sample-rows.json --dry-run
 
 Environment:
-    BLOG_SHEET_ID        ID of the response sheet (required unless --fixture)
+    BLOG_SHEET_ID        ID of the response sheet
     BLOG_PUBLISH_MODE    "pr" (default) or "direct"
 """
 
@@ -245,27 +244,6 @@ def col_letter(index: int) -> str:
     return letters
 
 
-class FixtureSource:
-    """Rows from a local JSON file, for testing. Photo values are local paths."""
-
-    def __init__(self, path: Path):
-        self.path = path
-        rows = json.loads(path.read_text())
-        self.submissions = []
-        for i, values in enumerate(rows, start=2):
-            photos = [p.strip() for p in (values.get(COL_PHOTOS) or "").split(",") if p.strip()]
-            self.submissions.append(Submission(i, values, photos))
-
-    def pending(self) -> list[Submission]:
-        return [s for s in self.submissions if not s.get(COL_STATUS)]
-
-    def fetch_photo(self, ref: str) -> bytes:
-        return (self.path.parent / ref).read_bytes()
-
-    def mark(self, sub: Submission, status: str, pr: str = "") -> None:
-        print(f"  [fixture] row {sub.row_number}: Status={status!r} PR={pr!r}")
-
-
 def google_credentials():
     """Application default credentials, or a key file in GOOGLE_SERVICE_ACCOUNT_JSON."""
     key = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
@@ -437,7 +415,6 @@ def publish_direct(sub: Submission, written: list[Path], base_ref: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--dry-run", action="store_true", help="write files only, without git or sheet updates")
-    parser.add_argument("--fixture", type=Path, help="read rows from a JSON file instead of the sheet")
     parser.add_argument("--limit", type=int, default=0, help="process at most N rows")
     parser.add_argument("--base", default="master", help="branch to publish to")
     parser.add_argument("--repo", type=Path, help="checkout of the site to use (default: this one)")
@@ -456,13 +433,10 @@ def main() -> int:
             print(f"{label}\t({category})")
         return 0
 
-    if args.fixture:
-        source = FixtureSource(args.fixture.resolve())
-    else:
-        sheet_id = os.environ.get("BLOG_SHEET_ID")
-        if not sheet_id:
-            raise SystemExit("Set BLOG_SHEET_ID to the response sheet's ID.")
-        source = SheetSource(sheet_id)
+    sheet_id = os.environ.get("BLOG_SHEET_ID")
+    if not sheet_id:
+        raise SystemExit("Set BLOG_SHEET_ID to the response sheet's ID.")
+    source = SheetSource(sheet_id)
 
     pending = source.pending()
     if args.limit:

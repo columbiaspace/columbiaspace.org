@@ -33,8 +33,8 @@ Teams come from the mission pages' `jumbotitle`, plus Podcast and General club n
 
 ## Running locally
 
-```bash
-uv run scripts/blog_import.py --fixture scripts/fixtures/sample-rows.json --dry-run
-```
+Log in with `gcloud auth application-default login --impersonate-service-account=<service account>` (your account needs permission in the Cloud project), set `BLOG_SHEET_ID`, then:
 
-To read the real sheet, log in with `gcloud auth application-default login --impersonate-service-account=<service account>` (your account needs permission in the Cloud project), set `BLOG_SHEET_ID`, and add `--dry-run`.
+```bash
+uv run scripts/blog_import.py --dry-run
+```
