@@ -10,6 +10,8 @@ markdown: kramdown
 permalink: pretty
 exclude:
   - vendor
+  - docs
+  - scripts
 
 # Google Analytics
 google_analytics: UA-78617707-1
