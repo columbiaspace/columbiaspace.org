@@ -56,6 +56,10 @@ If you need to update your packages according to the Gemfile, just run `bundle` 
 
 ## How to make posts!
 
+Officers can also submit posts through the blog Google Form. See [docs/blog-submissions.md](docs/blog-submissions.md).
+
+To write a post yourself:
+
 1. Log in to your GitHub account.
 2. Create a new file under the folder "_posts"
 3. Name the file with the following: `year-month-date-subsection-title.markdown` (e.g. `2015-11-13-micro-g-update.markdown`)
