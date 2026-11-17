@@ -13,7 +13,7 @@ submission: "11/17/2026 15:00:40"
 Episode 39 of This is Rocket Science is out! This week we learn about origami-inspired moon wheels, an Earth-like habitable planet, updates on the Artemis III mission, and more! Please also welcome our new hosts, Mac & Macy!
 
 <p align="center">
-	<img src="/assets/media/img/posts/2026-11-17-this-is-rocket-science-episode-39-origami-habitabl/1.jpg">
+	<img src="/assets/media/img/podcast/2026-11-17-this-is-rocket-science-episode-1.jpg">
 	<div>
     <figcaption class="text-center">
       <b>Poster for episode 39 of TiRS.</b>
