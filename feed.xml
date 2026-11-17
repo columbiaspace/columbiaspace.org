@@ -11,10 +11,14 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% comment %} Feed readers can't resolve site-relative links, so make them absolute. {% endcomment %}
+    {% assign site_root = site.url | append: site.baseurl | append: '/' %}
+    {% assign abs_src = 'src="' | append: site_root %}
+    {% assign abs_href = 'href="' | append: site_root %}
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
+        <description>{{ post.content | replace: 'src="/', abs_src | replace: 'href="/', abs_href | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
